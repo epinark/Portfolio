@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import "./styles/Navbar.css";
 import "./styles/About.css";
+import "./styles/Skills.css";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 function App() {
