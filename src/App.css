@@ -13,3 +13,28 @@
   font-family: 'Open Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
+
+.footer {
+  padding: 2rem 0;
+  background-color: #d0b8ac;
+  color: #FBFEFB;
+
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.container i {
+  color: #387ca386;
+  font-size: 1.2rem;
+
+}
+
+.container i:hover {
+  color: #387CA3;
+  cursor: pointer;
+}

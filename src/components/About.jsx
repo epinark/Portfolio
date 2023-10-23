@@ -1,6 +1,7 @@
 import profile from "../images/profile.jpg";
 import anim from "../images/anim.gif";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+
 function About() {
   return (
     <div className="about">
