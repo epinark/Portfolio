@@ -1,6 +1,6 @@
 .about {
-    height: 100%;
-    margin: 20px;
+
+    margin: 1rem;
 
 }
 
@@ -52,13 +52,13 @@
 @media (min-width: 768px) {
     .about {
         display: flex;
-        height: 100%;
-        margin: 30px 50px;
+        margin: 5rem 2rem;
     }
 
     #about-scroll {
         padding-right: 50px;
         border-right: 3px solid #efe5dc;
+        max-height: 50%;
     }
 
     .text-container {

@@ -85,6 +85,9 @@
 
 .connections i:hover {
     cursor: pointer;
+    color: blueviolet;
+
+
 }
 
 @media (min-width: 768px) {

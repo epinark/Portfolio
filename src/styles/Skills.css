@@ -1,12 +1,12 @@
 .tech-container {
     background-color: #D0B8AC;
-    padding: 2rem;
-    margin-top: 8rem;
+    padding: 5rem;
+
 }
 
 .tech-container h2 {
     text-align: center;
-    padding: 2rem;
+    padding-bottom: 2rem;
     color: #387ca386;
 
 }
