@@ -1,6 +1,7 @@
 .tech-container {
     background-color: #D0B8AC;
     padding: 2rem;
+    margin-top: 8rem;
 }
 
 .tech-container h2 {
@@ -20,7 +21,6 @@
 
 .tech-icon {
     display: flex;
-
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
@@ -53,5 +53,6 @@
 .icon-outer img {
     opacity: 0.5;
     height: 3.5rem;
+
 
 }

@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import "./styles/Navbar.css";
 import "./styles/About.css";
 import "./styles/Skills.css";
+import "./styles/Portfolio.css";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 function App() {
@@ -15,13 +16,11 @@ function App() {
       <div className="App">
         <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Home />
+        <About />
+        <Skills />
+        <Portfolio />
+        <Contact />
       </div>
     </>
   );
