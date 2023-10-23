@@ -1,4 +1,4 @@
-import mongo from "../images/mongo.svg";
+import mongo from "../images/mongodb.png";
 function Skills() {
   return (
     <div className="tech-container">
