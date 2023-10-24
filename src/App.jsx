@@ -9,6 +9,7 @@ import "./styles/About.css";
 import "./styles/Skills.css";
 import "./styles/Portfolio.css";
 import "./styles/Contact.css";
+import "./styles/Home.css";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -19,7 +20,10 @@ function App() {
         <Navbar />
 
         <Home />
-        <About />
+        <Routes>
+          <Route path="/about" element={<About />} />
+        </Routes>
+
         <Skills />
         <Portfolio />
         <Contact />
