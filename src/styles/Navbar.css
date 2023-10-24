@@ -9,8 +9,11 @@ nav {
     align-items: center;
     background-color: #d0b8ac;
     color: #FBFEFB;
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
 }
 
 nav .title {
@@ -23,6 +26,13 @@ nav .title {
 
 nav ul {
     display: flex;
+    position: relative;
+    z-index: 999;
+}
+
+nav ul.open {
+    max-height: 200px;
+
 }
 
 nav ul li {
@@ -54,7 +64,7 @@ nav .menu {
 }
 
 nav .menu span {
-    height: 0.4rem;
+    height: 0.3rem;
     width: 100%;
     background-color: #fff;
     border-radius: 0.2rem;
@@ -76,6 +86,7 @@ nav .menu span {
         flex-direction: column;
         width: 100%;
         margin-bottom: 0.25rem;
+        max-height: 100%;
     }
 
     nav ul.open {

@@ -1,6 +1,6 @@
 .about {
 
-    margin: 1rem;
+    margin: 4rem 2rem 2rem 2rem;
 
 }
 
@@ -13,8 +13,9 @@
 
 .profile img {
     object-fit: cover;
-    width: 150px;
-    height: 150px;
+
+    width: 14rem;
+    height: 14rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
     /* overflow-clip-margin: content-box;
