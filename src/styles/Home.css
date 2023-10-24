@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    margin: 4rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Delicious Handrawn', cursive;
+    color: #d0b8ac;
+}
+
+.animation {
+    animation: sunrise 10s ease-in-out infinite;
+
+
+}
+
+@keyframes sunrise {
+    0% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}

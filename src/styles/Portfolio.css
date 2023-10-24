@@ -90,6 +90,6 @@
 
 }
 
-@media (min-width: 768px) {
-    .project-card-inner img {}
-}
+/* CSS for larger screens (min-width: 768px) */
+
+@media (min-width: 768px) {}
