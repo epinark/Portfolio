@@ -1,4 +1,4 @@
-import profile from "../images/profile.jpg";
+import profile from "../images/esra.jpg";
 import anim from "../images/anim.gif";
 import { Link } from "react-router-dom";
 
