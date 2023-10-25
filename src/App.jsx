@@ -11,19 +11,19 @@ import "./styles/Portfolio.css";
 import "./styles/Contact.css";
 import "./styles/Home.css";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 function App() {
   return (
     <>
       <div className="App">
         <Navbar />
-
-        <Home />
+        {/* <Home /> */}{" "}
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />}>
+            <Route index element={<Outlet />} />
+          </Route>
         </Routes>
-
         <Skills />
         <Portfolio />
         <Contact />

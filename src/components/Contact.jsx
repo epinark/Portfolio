@@ -9,7 +9,7 @@ function Contact() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        esrapinarkaya@gmail.com
+        <span className="arrow">⟶</span>esrapinarkaya@gmail.com
       </a>
       <a
         className="contact"
@@ -17,6 +17,7 @@ function Contact() {
         target="_blank"
         rel="noopener noreferrer"
       >
+        <span className="arrow">⟶</span>
         github.com/epinark
       </a>
     </div>
