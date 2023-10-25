@@ -5,51 +5,83 @@
     margin: 3rem;
 }
 
-.projects-container h2 {
-    text-align: center;
+.upper-wrap {
+    display: inline-block;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+.upper-wrap h2 {
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+.border-p {
+    border-bottom: 3px solid rgba(0, 0, 0, .082);
+    max-width: 40%;
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    max-width: 700px;
+    opacity: .8;
+
 }
 
 .project-card {
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #387ca3;
-    padding: 15px;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-
 }
 
 .project-card-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #387ca386;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 
 
 }
 
-.project-card-inner img {
-    width: 18rem;
+.image {
     height: 9rem;
-    padding: 10px;
     transition: .6s ease-out;
     backface-visibility: hidden;
     object-fit: cover;
-
+    display: flex;
+    margin: 1rem auto;
+    width: 100%;
 }
 
-.project-card-inner img a {
-    transition: .6s ease-out;
+.view {
+    position: absolute;
+
+
+    background: rgba(0, 0, 0, 0.5);
+    color: black;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
 }
 
-.project-card-inner:hover img {
+.image-container:hover {
     opacity: 0.3;
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: all .2s ease-in-out;
+}
+
+.image-container:hover .view {
+    opacity: 1;
+
+
 }
 
 .description ul {
@@ -58,7 +90,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .description li {
@@ -66,7 +97,6 @@
     border-radius: 5px;
     margin: 0.4rem;
     padding: 0.3rem 0.5rem;
-
 }
 
 .connections {
@@ -75,7 +105,6 @@
     justify-content: end;
     padding: 10px;
     gap: 10px;
-
 }
 
 .connections i {
@@ -86,10 +115,46 @@
 .connections i:hover {
     cursor: pointer;
     color: blueviolet;
-
-
 }
+
 
 /* CSS for larger screens (min-width: 768px) */
 
-@media (min-width: 768px) {}
+@media (min-width: 480px) {
+    .project-card {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem;
+
+
+    }
+
+    .upper-wrap h2 {
+        font-size: 3rem;
+    }
+
+    .project-card-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem;
+    }
+
+    .image,
+    .image-reverse {
+        height: 12rem;
+        transition: .6s ease-out;
+        backface-visibility: hidden;
+        object-fit: cover;
+        display: flex;
+        margin: 1rem auto;
+        width: 28rem;
+    }
+
+
+}
