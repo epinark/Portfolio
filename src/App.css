@@ -15,6 +15,7 @@
 }
 
 .footer {
+  margin-top: 3rem;
   padding: 2rem 0;
   background-color: #d0b8ac;
   color: #FBFEFB;
@@ -38,3 +39,5 @@
   color: #387CA3;
   cursor: pointer;
 }
+
+@media (min-width: 480px) {}

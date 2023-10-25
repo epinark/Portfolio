@@ -82,9 +82,7 @@ nav .menu span {
     nav .menu {
         display: flex;
 
-
     }
-
 
     nav {
         flex-direction: column;

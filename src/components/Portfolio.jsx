@@ -6,11 +6,13 @@ function Portfolio() {
   return (
     <div>
       <div className="projects-container">
-        <h2>My Projects</h2>
+        <div className="upper-wrap">
+          <h2>My Projects</h2>
+          <span className="border-p"></span>
+        </div>
         <div className="project-card">
-          <h2>DrTime</h2>
           <div className="project-card-inner">
-            <img src={drtime} alt="drtime" />
+            <h2>DrTime</h2>
             <span className="description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
               placeat vero at ratione dolore adipisci officia culpa nesciunt
@@ -23,11 +25,7 @@ function Portfolio() {
                 <li className="skill">Express</li>
               </ul>
             </span>
-            <a
-              href="https://drtime.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
+
             <div className="connections">
               <a
                 href="https://github.com/Gabriel3004/DrTime-client"
@@ -45,11 +43,19 @@ function Portfolio() {
               </a>
             </div>
           </div>
+          <a
+            className="image-container"
+            href="https://drtime.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="image" src={drtime} alt="drtime" />
+            <span className="view">View Project</span>
+          </a>
         </div>
-        <div className="project-card">
-          <h2>What's my IP?</h2>
+        <div className="project-card-reverse">
           <div className="project-card-inner">
-            <img src={myip} alt="drtime" />
+            <h2>What's my IP?</h2>
             <span className="description">
               A small one-page React application that provides the user with
               information about their current IP address, location, and some
@@ -60,11 +66,7 @@ function Portfolio() {
                 <li className="skill">Leaflet</li>
               </ul>
             </span>
-            <a
-              href="https://showmyplace.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
+
             <div className="connections">
               <a
                 href="https://github.com/epinark/my-ip"
@@ -75,11 +77,19 @@ function Portfolio() {
               </a>
             </div>
           </div>
+          <a
+            className="image-container"
+            href="https://showmyplace.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="image" src={myip} alt="drtime" />
+            <span className="view">View Project</span>
+          </a>
         </div>
         <div className="project-card">
-          <h2>Trivia Quiz</h2>
           <div className="project-card-inner">
-            <img src={quiz} alt="quiz" />
+            <h2>Trivia Quiz</h2>
             <span className="description">
               A trivia quiz application built using React. It fetches trivia
               questions from an API and allows users to test their knowledge and
@@ -89,13 +99,10 @@ function Portfolio() {
                 <li className="skill">Api</li>
               </ul>
             </span>
-            <a
-              href="https://justsomefun.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
+
             <div className="connections">
               <a
+                className="image-container"
                 href="https://github.com/epinark/Trivia-Quiz"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -104,6 +111,15 @@ function Portfolio() {
               </a>
             </div>
           </div>
+          <a
+            className="image-container"
+            href="https://justsomefun.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="image" src={quiz} alt="quiz" />
+            <span className="view">View Project</span>
+          </a>
         </div>
       </div>
     </div>
