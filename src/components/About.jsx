@@ -1,10 +1,36 @@
 import profile from "../images/esra.jpg";
 import anim from "../images/anim.gif";
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import sun from "../images/sun.png";
 
 function About() {
+  const [currenttime, setCurrenttime] = useState(new Date());
+  const greetings = currenttime.getHours();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrenttime(new Date());
+    }, 60000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  let greetingText;
+  let animationClass = "";
+
+  if (greetings < 12) {
+    greetingText = "Good Morning";
+    animationClass = "sunrise-animation";
+  } else if (greetings < 16) {
+    greetingText = "Good Afternoon";
+  } else {
+    greetingText = "Good Evening";
+  }
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div id="about-scroll">
         <div className="profile">
           <img src={profile} alt="profile-foto" />
@@ -39,7 +65,7 @@ function About() {
       </div>
       <div className="text-container">
         <p className="text">
-          Hi!{" "}
+          <h1>{greetingText},</h1>
           <span>
             I'm<span> Esra,</span>{" "}
           </span>

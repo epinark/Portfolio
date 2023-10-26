@@ -1,13 +1,44 @@
+.skill-container {
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+
+.upper-skill {
+    display: inline-block;
+    height: 55px;
+    position: relative;
+
+
+}
+
+.upper-skill h2 {
+    font-size: 2.5rem;
+}
+
+.border-s {
+    border-bottom: 3px solid rgba(0, 0, 0, .082);
+    max-width: 40%;
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    max-width: 700px;
+    opacity: .8;
+}
+
 .tech-container {
-    background-color: #D0B8AC;
+    /* background-color: #D0B8AC; */
     padding: 5rem;
+    margin-bottom: 2rem;
 
 }
 
 .tech-container h2 {
     text-align: center;
     padding-bottom: 2rem;
-    color: #387ca386;
+
 
 }
 
@@ -40,7 +71,7 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: 1rem;
-    background-color: #387ca386;
+    /* background-color: #387ca386; */
     color: #F3D8C7;
 }
 
