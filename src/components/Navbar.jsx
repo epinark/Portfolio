@@ -21,16 +21,16 @@ function Navbar() {
         </div>
         <ul className={menuOpen ? "open" : ""}>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <a href="#about">About</a>
           </li>
           <li>
-            <NavLink to="/skills">Skills</NavLink>
+            <a href="#skills">Skills </a>
           </li>
           <li>
-            <NavLink to="/portfolio">Services</NavLink>
+            <a href="#portfolio">Portfolio </a>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <a href="#contact">Contact </a>
           </li>
         </ul>
       </nav>

@@ -1,8 +1,14 @@
 import mongo from "../images/mongodb.png";
+
 function Skills() {
   return (
-    <div className="tech-container">
-      <h2>My Skills</h2>
+    <div className="tech-container" id="skills">
+      <div className="skill-container">
+        <div className="upper-skill">
+          <h2>My Skills</h2>
+          <span className="border-s"></span>
+        </div>
+      </div>
       <div className="tech-icons-wrapper">
         <div className="tech-icon">
           <div className="icon-outer">

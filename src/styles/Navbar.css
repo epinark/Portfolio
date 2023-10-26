@@ -7,7 +7,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d0b8ac;
+    background-color: #393E46;
     color: #FBFEFB;
     position: fixed;
     top: 0;
@@ -112,6 +112,7 @@ nav .menu span {
     nav ul li a {
         margin: 0.2rem 0.5rem;
     }
+
 
     .open {
         display: flex;
