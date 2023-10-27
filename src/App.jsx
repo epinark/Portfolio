@@ -18,19 +18,17 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Home /> */}
       <Section id="about" content={<About />} />
       <Section id="skills" content={<Skills />} />
       <Section id="portfolio" content={<Portfolio />} />
       <Section id="contact" content={<Contact />} />
 
-      {/* <About />
-      <Skills />
-      <Portfolio />
-      <Contact /> */}
       <footer className="footer">
         <div className="container">
-          <span>&copy; 2023 My App | All rights reserved</span>
+          <span>
+            Built with <span className="heart">❤️</span> by Esra Pinar Berkus
+            &copy; 2023
+          </span>
           <div className="social-media">
             <a
               className="contacts"
@@ -48,12 +46,7 @@ function App() {
             >
               <i className="fab fa-github"></i>
             </a>
-            <Link
-              to="/contact"
-              smooth={true}
-              duration={1000}
-              className="contacts"
-            >
+            <Link to="/contact" duration={1000} className="contacts">
               <i className="fa fa-envelope"></i>
             </Link>
           </div>

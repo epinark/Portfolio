@@ -1,9 +1,9 @@
 // Section.js
 import React from "react";
-import useIntersectionObserver from "./useIntersectionObserver";
+import UseIntersectionObserver from "./UseIntersectionObserver";
 
 function Section({ id, content }) {
-  const { targetRef, isVisible } = useIntersectionObserver({
+  const { targetRef, isVisible } = UseIntersectionObserver({
     threshold: 0.1, // Adjust as needed
   });
 

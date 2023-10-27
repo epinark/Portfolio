@@ -14,6 +14,8 @@ nav {
     right: 0;
     left: 0;
     z-index: 1;
+    max-width: 1080px;
+    margin: 0 auto;
 
 }
 
@@ -22,13 +24,14 @@ nav .title {
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: #F3D8C7;
 }
 
 nav ul {
     display: flex;
     position: relative;
     transition: all 0.4s ease;
+
 }
 
 nav ul li {
@@ -38,14 +41,14 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: #FBFEFB;
+    color: #F3D8C7;
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
 }
 
 nav ul li a:not(.active):hover {
-    background-color: #F3D8C7;
+    background-color: #abdbe3;
 }
 
 nav .menu {
