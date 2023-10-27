@@ -1,8 +1,5 @@
 .about {
-
     padding: 6rem 2rem 2rem 2rem;
-
-
 }
 
 .profile {
@@ -14,7 +11,6 @@
 
 .profile img {
     object-fit: cover;
-
     width: 14rem;
     height: 14rem;
     border-radius: 50%;
@@ -54,7 +50,7 @@
 @media (min-width: 480px) {
     .about {
         display: flex;
-        padding-top: 6rem;
+        padding-top: 8rem;
     }
 
     #about-scroll {

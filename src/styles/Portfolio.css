@@ -3,7 +3,7 @@
     letter-spacing: .1rem;
     line-height: 2rem;
     margin-top: 3rem;
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
 .upper-wrap {
@@ -37,13 +37,34 @@
 .project-card {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+}
+
+.project-name h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#project-card-myip {
+    border-style: double;
+    padding: 1rem;
+}
+
+#project-card-drtime {
+    border-style: double;
+}
+
+.project-card-outer {
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
     border-radius: 5px;
 
     color: white;
@@ -69,16 +90,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.5);
-    color: black;
+    color: #D0B8AC;
+    padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
 }
 
-.image-container:hover {
+.image-container:hover img {
     opacity: 0.3;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     transition: .6s ease-out;
 
 }
@@ -86,9 +108,6 @@
 .image-container:hover .view {
     opacity: 1;
     transition: .6s;
-
-
-
 }
 
 .description ul {
@@ -114,6 +133,7 @@
     justify-content: end;
     padding: 10px;
     gap: 10px;
+    justify-content: center;
 }
 
 .connections i {
@@ -127,8 +147,6 @@
 }
 
 
-/* CSS for larger screens (min-width: 768px) */
-
 @media (min-width: 1028px) {
     .projects-container {
         margin: 0 auto;
@@ -137,10 +155,9 @@
     .project-card {
         display: flex;
         flex-direction: row;
-        gap: 10rem;
+        gap: 4rem;
         justify-content: center;
         align-items: center;
-        margin: 3rem;
 
 
     }
@@ -152,7 +169,7 @@
     .project-card-reverse {
         display: flex;
         flex-direction: row-reverse;
-        gap: 10rem;
+        gap: 4rem;
         justify-content: center;
         align-items: center;
         margin: 3rem;
