@@ -1,6 +1,7 @@
 .about {
 
-    margin: 6rem 2rem 2rem 2rem;
+    padding: 6rem 2rem 2rem 2rem;
+
 
 }
 
@@ -46,13 +47,14 @@
     letter-spacing: .1rem;
     line-height: 2rem;
     margin-top: 1.5rem;
+    color: #F3D8C7;
 
 }
 
 @media (min-width: 480px) {
     .about {
         display: flex;
-        margin: 10rem 4rem 1rem 4rem;
+        padding-top: 6rem;
     }
 
     #about-scroll {

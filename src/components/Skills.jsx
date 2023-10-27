@@ -1,4 +1,7 @@
-import mongo from "../images/mongodb.png";
+import mongo from "../images/mongo.svg";
+import postgresql from "../images/postgresql.svg";
+import tailwind from "../images/tailwind.svg";
+import sqlite from "../images/sqlite.svg";
 
 function Skills() {
   return (
@@ -52,6 +55,26 @@ function Skills() {
             <img src={mongo} />
           </div>
           <span>MongoDB</span>
+        </div>
+
+        <div className="tech-icon">
+          <div className="icon-outer">
+            <img src={postgresql} />
+          </div>
+          <span>PostgreSQL</span>
+        </div>
+
+        <div className="tech-icon">
+          <div className="icon-outer">
+            <img src={tailwind} />
+          </div>
+          <span>Tailwind CSS</span>
+        </div>
+        <div className="tech-icon">
+          <div className="icon-outer">
+            <img src={sqlite} />
+          </div>
+          <span>SQLite</span>
         </div>
 
         <div className="tech-icon">

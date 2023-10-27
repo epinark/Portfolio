@@ -1,7 +1,7 @@
-// useIntersectionObserver.js
+// UseIntersectionObserver.js
 import { useEffect, useRef, useState } from "react";
 
-function useIntersectionObserver(options) {
+function UseIntersectionObserver(options) {
   const [isVisible, setIsVisible] = useState(false);
   const targetRef = useRef(null);
 
@@ -24,4 +24,4 @@ function useIntersectionObserver(options) {
   return { targetRef, isVisible };
 }
 
-export default useIntersectionObserver;
+export default UseIntersectionObserver;

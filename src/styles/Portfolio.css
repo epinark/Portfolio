@@ -2,7 +2,8 @@
     font-size: 1.2rem;
     letter-spacing: .1rem;
     line-height: 2rem;
-    margin: 3rem;
+    margin-top: 3rem;
+    padding: 1rem;
 }
 
 .upper-wrap {
@@ -10,7 +11,7 @@
     height: 45px;
     position: relative;
     margin-bottom: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
 
 }
 
@@ -99,10 +100,12 @@
 }
 
 .description li {
-    background-color: #abdbe3;
+    /* background-color: #abdbe3; */
     border-radius: 5px;
     margin: 0.4rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.2rem 0.3rem;
+    border-style: groove;
+    font-size: 0.6rem;
 }
 
 .connections {
@@ -126,7 +129,7 @@
 
 /* CSS for larger screens (min-width: 768px) */
 
-@media (min-width: 480px) {
+@media (min-width: 1028px) {
     .projects-container {
         margin: 0 auto;
     }

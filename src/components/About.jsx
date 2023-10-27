@@ -52,27 +52,22 @@ function About() {
             >
               <i className="fab fa-github"></i>
             </a>
-            <Link
-              to="/contact"
-              smooth={true}
-              duration={1000}
-              className="social-icon"
-            >
+            <Link to="/contact" duration={1000} className="social-icon">
               <i className="fa fa-envelope"></i>
             </Link>
           </div>
         </div>
       </div>
       <div className="text-container">
-        <p className="text">
+        <div className="text">
           <h1>{greetingText},</h1>
           <span>
             I'm<span> Esra,</span>{" "}
           </span>
-          <div>
+          <span>
             Junior<span> FullStack Developer.</span>
-          </div>
-        </p>
+          </span>
+        </div>
         <p className="paragraph">
           I am a former math teacher in Turkey who made a career change when I
           moved to Germany two years ago, taking it as an opportunity to explore
