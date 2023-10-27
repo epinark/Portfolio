@@ -45,7 +45,7 @@ function Skills() {
         </div>
         <div className="tech-icon">
           <div className="icon-outer">
-            <p>ex</p>
+            <span>ex</span>
           </div>
           <span>Express.js</span>
         </div>

@@ -77,8 +77,12 @@
 
 }
 
-.icon-outer i,
-.icon-outer p {
+.icon-outer i {
+    color: #F3D8C7;
+    font-size: 3.5rem;
+}
+
+.icon-outer span {
     color: #F3D8C7;
     font-size: 3.5rem;
 }
@@ -91,4 +95,5 @@
 
 .icon-outer:hover {
     opacity: 0.6;
+
 }

@@ -8,6 +8,8 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  const cvUrl = import.meta.env.VITE_CV_URL;
+
   return (
     <div>
       <nav>
@@ -31,6 +33,11 @@ function Navbar() {
           </li>
           <li>
             <a href="#contact">Contact </a>
+          </li>
+          <li>
+            <a href={cvUrl} download="esrapinarberkus-resume.pdf">
+              Resume
+            </a>
           </li>
         </ul>
       </nav>
