@@ -24,7 +24,7 @@ function About() {
   if (greetings < 12) {
     greetingText = "Good Morning";
   } else if (greetings < 16) {
-    greetingText = "Good Afternoon";
+    greetingText = "Good Afternoon☀️";
   } else {
     greetingText = "Good Evening ";
     emoji = "🌟";
@@ -66,6 +66,7 @@ function About() {
           <span>
             I'm<span> Esra,</span>{" "}
           </span>
+          <></>
           <span>
             Junior<span> FullStack Developer.</span>
           </span>

@@ -106,11 +106,13 @@
   transform: translateY(20px);
   /* Optional: Add a slight upward translation effect */
   transition: opacity 0.5s, transform 0.5s;
+  padding-top: 3rem;
 }
 
 .fade-in-section.visible {
   opacity: 1;
   transform: translateY(0);
+
 }
 
 

@@ -43,22 +43,24 @@
     text-decoration: none;
     color: #387ca386;
     font-size: 1.5rem;
+    transition: all 0.5s ease;
 
 }
 
 .arrow {
     display: inline-block;
     opacity: 0;
+    transition: .5s;
 
 }
 
 .contact:hover {
     margin-left: 5px;
-    transition: all 0.5s ease;
+
 
     .arrow {
         opacity: 1;
-        transition: .5s;
+
 
     }
 
