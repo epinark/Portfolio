@@ -21,19 +21,19 @@ function Skills() {
         </div>
         <div className="tech-icon">
           <div className="icon-outer">
-            <i class="fa-brands fa-css3"></i>
+            <i className="fa-brands fa-css3"></i>
           </div>
           <span>CSS3</span>
         </div>
         <div className="tech-icon">
           <div className="icon-outer">
-            <i class="fa-brands fa-js"></i>
+            <i className="fa-brands fa-js"></i>
           </div>
           <span>Javascript</span>
         </div>
         <div className="tech-icon">
           <div className="icon-outer">
-            <i class="fa-brands fa-react"></i>
+            <i className="fa-brands fa-react"></i>
           </div>
           <span>React</span>
         </div>
