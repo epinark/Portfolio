@@ -18,53 +18,66 @@ function Portfolio() {
           <Section
             id="project-card-drtime"
             content={
-              <div className="project-name">
-                <h2>DrTime</h2>
-                <div className="project-card">
-                  <div className="project-card-inner">
-                    <span className="description">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Dolor placeat vero at ratione dolore adipisci officia
-                      culpa nesciunt similique maiores corrupti, reiciendis
-                      inventore est deserunt mollitia harum cupiditate impedit
-                      facere?
-                      <ul className="skills">
-                        <li className="skill">React</li>
-                        <li className="skill">Node.js</li>
-                        <li className="skill">MongoDB</li>
-                        <li className="skill">Express</li>
-                      </ul>
-                    </span>
-                  </div>
-                  <div>
-                    <a
-                      className="image-container"
-                      href="https://drtime.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img className="image" src={drtime} alt="drtime" />
-                      <span className="view">View Project</span>
-                    </a>
-                    <div className="connections">
+              <>
+                <div className="project-name">
+                  <h2>DrTime</h2>
+                  <div className="project-card">
+                    <div className="project-card-inner">
+                      <span className="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolor placeat vero at ratione dolore adipisci
+                        officia culpa nesciunt similique maiores corrupti,
+                        reiciendis inventore est deserunt mollitia harum
+                        cupiditate impedit facere?
+                        <ul className="skills">
+                          <li className="skill">React</li>
+                          <li className="skill">Node.js</li>
+                          <li className="skill">MongoDB</li>
+                          <li className="skill">Express</li>
+                        </ul>
+                      </span>
+                    </div>
+                    <div>
                       <a
-                        href="https://github.com/Gabriel3004/DrTime-client"
+                        className="image-container"
+                        href="https://drtime.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fab fa-github"></i>
+                        <img
+                          className="project-image"
+                          src={drtime}
+                          alt="drtime"
+                        />
+                        <span className="view">View Project</span>
                       </a>
-                      <a
-                        href="https://github.com/Gabriel3004/DrTime-server"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <i className="fab fa-github"></i>
-                      </a>
+                      <div className="connections">
+                        <a
+                          href="https://drtime.netlify.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                        <a
+                          href="https://github.com/Gabriel3004/DrTime-client"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://github.com/Gabriel3004/DrTime-server"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fab fa-github"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </>
             }
           />
 
@@ -93,10 +106,17 @@ function Portfolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img className="image" src={myip} alt="drtime" />
-                      <span className="view">View Project</span>
+                      <img className="project-image" src={myip} alt="drtime" />
+                      <span className="view-reverse">View Project</span>
                     </a>
                     <div className="connections">
+                      <a
+                        href="https://showmyplace.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fa-solid fa-up-right-from-square"></i>
+                      </a>
                       <a
                         href="https://github.com/epinark/my-ip"
                         target="_blank"
@@ -134,10 +154,18 @@ function Portfolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img className="image" src={quiz} alt="quiz" />
+                      <img className="project-image" src={quiz} alt="quiz" />
                       <span className="view">View Project</span>
                     </a>
                     <div className="connections">
+                      <a
+                        className="image-container"
+                        href="https://justsomefun.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fa-solid fa-up-right-from-square"></i>
+                      </a>
                       <a
                         className="image-container"
                         href="https://github.com/epinark/Trivia-Quiz"
