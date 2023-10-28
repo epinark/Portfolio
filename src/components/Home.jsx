@@ -16,11 +16,9 @@ function Home() {
   }, []);
 
   let greetingText;
-  let animationClass = "";
 
   if (greetings < 12) {
     greetingText = "Good Morning";
-    animationClass = "sunrise-animation";
   } else if (greetings < 16) {
     greetingText = "Good Afternoon";
   } else {

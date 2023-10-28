@@ -95,16 +95,16 @@ function Portfolio() {
                     >
                       <img className="image" src={myip} alt="drtime" />
                       <span className="view">View Project</span>
-                      <div className="connections">
-                        <a
-                          href="https://github.com/epinark/my-ip"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="fab fa-github"></i>
-                        </a>
-                      </div>
                     </a>
+                    <div className="connections">
+                      <a
+                        href="https://github.com/epinark/my-ip"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

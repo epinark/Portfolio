@@ -2,7 +2,7 @@ import profile from "../images/esra.jpg";
 import anim from "../images/anim.gif";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import sun from "../images/sun.png";
+import night from "../images/night.svg";
 
 function About() {
   const [currenttime, setCurrenttime] = useState(new Date());
@@ -19,15 +19,15 @@ function About() {
   }, []);
 
   let greetingText;
-  let animationClass = "";
+  let emoji;
 
   if (greetings < 12) {
     greetingText = "Good Morning";
-    animationClass = "sunrise-animation";
   } else if (greetings < 16) {
     greetingText = "Good Afternoon";
   } else {
-    greetingText = "Good Evening";
+    greetingText = "Good Evening ";
+    emoji = "🌟";
   }
   return (
     <div className="about" id="about">
@@ -60,7 +60,9 @@ function About() {
       </div>
       <div className="text-container">
         <div className="text">
-          <h1>{greetingText},</h1>
+          <h1>
+            {greetingText} <span className="shooting-star">{emoji}</span>
+          </h1>
           <span>
             I'm<span> Esra,</span>{" "}
           </span>
