@@ -1,5 +1,6 @@
 import drtime from "../images/drtime.png";
 import myip from "../images/myip.png";
+import m from "../images/m.png";
 import quiz from "../images/quiz.png";
 import Section from "./Section";
 
@@ -9,7 +10,9 @@ function Portfolio() {
       <div className="projects-container">
         <div className="upper-wrap">
           <div className="inner-wrap">
-            <h2>My Projects</h2>
+            <h2>
+              My Projects<span className="dot">.</span>
+            </h2>
             <span className="border-p"></span>
           </div>
         </div>
@@ -18,17 +21,23 @@ function Portfolio() {
           <Section
             id="project-card-drtime"
             content={
-              <>
+              <div className="animation">
+                <span className="border-top"></span>
+                <span className="border-right"></span>
+                <span className="border-bottom"></span>
+                <span className="border-left"></span>
                 <div className="project-name">
                   <h2>DrTime</h2>
                   <div className="project-card">
                     <div className="project-card-inner">
                       <span className="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Dolor placeat vero at ratione dolore adipisci
-                        officia culpa nesciunt similique maiores corrupti,
-                        reiciendis inventore est deserunt mollitia harum
-                        cupiditate impedit facere?
+                        An app focused on simplifying the process of scheduling
+                        doctor appointments and enabling find a primary doctor.
+                        In a small team, my primary roles included: Developing
+                        {/* specific frontend components. Managing backend
+                        development, which encompassed setting up the server,
+                        creating APIs, and ensuring communication with the
+                        database. */}
                         <ul className="skills">
                           <li className="skill">React</li>
                           <li className="skill">Node.js</li>
@@ -49,7 +58,7 @@ function Portfolio() {
                           src={drtime}
                           alt="drtime"
                         />
-                        <span className="view">View Project</span>
+                        <span className="view">View Project⟶</span>
                       </a>
                       <div className="connections">
                         <a
@@ -77,7 +86,7 @@ function Portfolio() {
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             }
           />
 
@@ -106,8 +115,8 @@ function Portfolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img className="project-image" src={myip} alt="drtime" />
-                      <span className="view-reverse">View Project</span>
+                      <img className="project-image" src={m} alt="drtime" />
+                      <span className="view-reverse">View Project⟶</span>
                     </a>
                     <div className="connections">
                       <a
@@ -155,7 +164,7 @@ function Portfolio() {
                       rel="noopener noreferrer"
                     >
                       <img className="project-image" src={quiz} alt="quiz" />
-                      <span className="view">View Project</span>
+                      <span className="view">View Project⟶</span>
                     </a>
                     <div className="connections">
                       <a

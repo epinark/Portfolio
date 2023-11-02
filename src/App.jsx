@@ -30,7 +30,7 @@ function App() {
               Built with <span className="heart">❤️</span> by Esra Pinar Berkus
               &copy; 2023
             </span>
-            <div className="social-media">
+            {/* <div className="social-media">
               <a
                 className="contacts"
                 href="www.linkedin.com/in/esra-pinar-berkus"
@@ -50,7 +50,7 @@ function App() {
               <Link to="/contact" duration={1000} className="contacts">
                 <i className="fa fa-envelope"></i>
               </Link>
-            </div>
+            </div> */}
           </div>
         </footer>
       </BrowserRouter>

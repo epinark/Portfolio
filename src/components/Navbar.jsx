@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../images/logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,7 +42,7 @@ function Navbar() {
     <div>
       <nav>
         <Link to="/" className="title">
-          Website
+          <img src={logo} alt="logo" />
         </Link>
         <div className={`menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
           <span className="line-1"></span>

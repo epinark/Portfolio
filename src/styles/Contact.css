@@ -26,14 +26,14 @@
     gap: 1rem;
 }
 
-.border {
+.border-c {
     border-bottom: 3px solid rgba(0, 0, 0, .082);
     width: 100%;
     position: absolute;
     height: 1px;
-    background: #fff;
+    background: #D0B8AC;
     left: 0;
-    bottom: 0;
+    bottom: -65px;
     max-width: 700px;
     opacity: .8;
 }

@@ -22,7 +22,7 @@ function About() {
   let emoji;
 
   if (greetings < 12) {
-    greetingText = "Good Morning";
+    greetingText = "Good Morning☕";
   } else if (greetings < 16) {
     greetingText = "Good Afternoon☀️";
   } else {
@@ -63,23 +63,21 @@ function About() {
           <h1>
             {greetingText} <span className="shooting-star">{emoji}</span>
           </h1>
-          <span>
-            I'm<span> Esra,</span>{" "}
-          </span>
-          <></>
-          <span>
-            Junior<span> FullStack Developer.</span>
-          </span>
+          <span className="handschrift">Junior Fullstack Web Developer</span>
         </div>
         <p className="paragraph">
-          I am a former math teacher in Turkey who made a career change when I
-          moved to Germany two years ago, taking it as an opportunity to explore
-          new horizons while leveraging my background. My love for solving
+          <span>
+            I'm<span> Esra,</span>{" "}
+          </span>{" "}
+          <br />I was a math teacher who made a career change when I moved to
+          Germany two years ago, taking it as an opportunity to explore new
+          horizons while leveraging my background. My love for solving
           challenging problems and exploring different ways of solving them led
           me to embark on an ambitious journey as a full-stack web developer.
           Through my education and professional teaching years, I have developed
-          a strong foundation in problem solving, analytical thinking, and
-          effective communication.
+          a strong foundation in problem solving,{" "}
+          <span className="handschrift">analytical thinking,</span> and{" "}
+          <span className="handschrift">effective communication.</span>
         </p>
       </div>
     </div>
