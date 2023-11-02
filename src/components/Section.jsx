@@ -1,7 +1,7 @@
-import UseIntersectionObserver from "./UseIntersectionObserver";
+import useIntersectionObserver from "./UseIntersectionObserver";
 
 function Section({ id, content }) {
-  const { targetRef, isVisible } = UseIntersectionObserver({
+  const { targetRef, isVisible } = useIntersectionObserver({
     threshold: 0.1,
   });
 
