@@ -2,8 +2,10 @@ function Contact() {
   return (
     <div className="contact-wrapper" id="contact">
       <div className="contact-section">
-        <h2>Contact</h2>
-        <span className="border-p"></span>
+        <h2>
+          Contact<span className="dot">.</span>
+        </h2>
+        <span className="border-c"></span>
         <div className="contact-detail">
           <a
             className="contact"

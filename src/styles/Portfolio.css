@@ -26,11 +26,13 @@
     width: 100%;
     position: absolute;
     height: 1px;
-    background: #fff;
+    background: #D0B8AC;
+    top: 53px;
     left: 0;
-    bottom: 0;
     max-width: 700px;
     opacity: .8;
+
+
 
 }
 
@@ -67,21 +69,22 @@
     align-items: center;
     border-radius: 5px;
 
-    color: white;
+    color: #D0B8AC;
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); */
 
 
 }
 
 .project-image {
-    height: 9rem;
+
     transition: .6s ease-out;
     backface-visibility: hidden;
     object-fit: cover;
     display: flex;
     margin: 1rem auto;
-    width: 100%;
     border-radius: 5px;
+    width: 100%;
+
 }
 
 .view {
@@ -114,6 +117,13 @@
     transition: .6s;
 }
 
+.arrow {
+    display: inline-block;
+    opacity: 0;
+    transition: .5s;
+
+}
+
 .image-container {
     position: relative;
     transition: .6s;
@@ -132,6 +142,8 @@
 
 }
 
+
+
 .image-container:hover .view-reverse {
     opacity: 1;
 
@@ -146,12 +158,11 @@
 }
 
 .description li {
-    /* background-color: #abdbe3; */
+    /* background-color: #D0B8AC; */
     border-radius: 5px;
     margin: 0.4rem;
     padding: 0.2rem 0.3rem;
-    border-style: groove;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .connections {
@@ -171,6 +182,11 @@
 .connections i:hover {
     cursor: pointer;
     color: blueviolet;
+}
+
+.inner-wrap {
+    position: relative;
+    display: inline-block;
 }
 
 @media (min-width:648px) {
@@ -214,13 +230,13 @@
     }
 
     .project-image {
-        height: 12rem;
+
         transition: .6s ease-out;
         backface-visibility: hidden;
         object-fit: cover;
         display: flex;
         margin: 1rem auto;
-        width: 28rem;
+
     }
 
 

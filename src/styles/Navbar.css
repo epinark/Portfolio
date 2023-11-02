@@ -88,7 +88,10 @@ nav .menu span {
     width: 2rem;
 }
 
-
+.title img {
+    width: 5rem;
+    height: 5rem;
+}
 
 @media (max-width: 480px) {
 

@@ -22,9 +22,9 @@
     width: 100%;
     position: absolute;
     height: 1px;
-    background: #fff;
+    background: #D0B8AC;
     left: 0;
-    bottom: 0;
+    bottom: -62px;
     max-width: 700px;
     opacity: .8;
 }
@@ -39,7 +39,7 @@
 
 .tech-container h2 {
     text-align: center;
-    padding-bottom: 2rem;
+
 
 
 }
@@ -98,4 +98,8 @@
 .icon-outer:hover {
     opacity: 0.6;
 
+}
+
+.dot {
+    font-size: 100px;
 }
