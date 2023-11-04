@@ -83,6 +83,92 @@
     border-radius: 0.3rem;
 }
 
+.border {
+    position: absolute;
+    opacity: 0.8;
+}
+
+.text-details {
+    position: relative;
+
+    width: 100%;
+}
+
+.top-side {
+    width: 100%;
+    top: 0;
+    height: 1px;
+    left: 0;
+    animation: drawTop 4s ease-in;
+}
+
+.right-side {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    animation: drawRight 4s ease-in;
+}
+
+.bottom-side {
+    width: 100%;
+    bottom: 0px;
+    height: 1px;
+    right: 0;
+    animation: drawBottom 4s ease-in;
+
+}
+
+.left-side {
+    height: 100%;
+
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    animation: drawLeft 4s ease-in;
+}
+
+@keyframes drawTop {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes drawRight {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes drawBottom {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes drawLeft {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+
 @keyframes star-shooting {
     0% {
         left: 0;
