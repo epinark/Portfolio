@@ -57,6 +57,7 @@ function Navbar() {
             >
               About
             </a>
+            <span className="underline"></span>
           </li>
           <li>
             <a
@@ -65,6 +66,7 @@ function Navbar() {
             >
               Skills{" "}
             </a>
+            <span className="underline"></span>
           </li>
           <li>
             <a
@@ -73,6 +75,7 @@ function Navbar() {
             >
               Portfolio{" "}
             </a>
+            <span className="underline"></span>
           </li>
           <li>
             <a
@@ -81,11 +84,13 @@ function Navbar() {
             >
               Contact{" "}
             </a>
+            <span className="underline"></span>
           </li>
           <li>
             <a href={cvUrl} download="esrapinarberkus-resume.pdf">
               Resume
             </a>
+            <span className="underline"></span>
           </li>
         </ul>
       </nav>

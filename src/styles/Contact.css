@@ -33,9 +33,10 @@
     height: 1px;
     background: #D0B8AC;
     left: 0;
-    bottom: -65px;
+    bottom: -68px;
     max-width: 700px;
     opacity: .8;
+    animation: drawTop 2s ease-in;
 }
 
 .contact {
@@ -45,6 +46,16 @@
     font-size: 1.5rem;
     transition: all 0.5s ease;
 
+}
+
+@keyframes drawTop {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .arrow {

@@ -36,6 +36,7 @@ nav ul {
 
 nav ul li {
     list-style: none;
+    position: relative;
 }
 
 nav ul li a {
@@ -56,10 +57,22 @@ nav ul li a {
 }
 
 
-
-nav ul li a:not(.active):hover {
-    background-color: #abdbe3;
+.underline {
+    background-color: gold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease-in, transform 0.3s ease-in;
+    transform: translateX(-50%);
 }
+
+nav ul li:hover .underline {
+    width: 100%;
+    transform: translateX(0);
+}
+
 
 nav .menu {
     display: none;
@@ -92,6 +105,7 @@ nav .menu span {
     width: 5rem;
     height: 5rem;
 }
+
 
 @media (max-width: 480px) {
 
