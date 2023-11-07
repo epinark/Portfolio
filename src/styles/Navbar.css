@@ -16,12 +16,13 @@ nav {
     z-index: 1;
     max-width: 1080px;
     margin: 0 auto;
+    padding: 1rem 0;
+
 
 }
 
 nav .title {
-    font-size: 1.5rem;
-    margin: 1rem;
+    padding-left: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     color: #F3D8C7;
@@ -31,6 +32,8 @@ nav ul {
     display: flex;
     position: relative;
     transition: all 0.4s ease;
+    font-size: 1.5rem;
+
 
 }
 
@@ -77,20 +80,19 @@ nav ul li:hover .underline {
 nav .menu {
     display: none;
     position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
+    top: 1.55rem;
+    right: 1.4rem;
     flex-direction: column;
     justify-content: space-between;
     width: 2.25rem;
     height: 2rem;
-
 }
 
 
 nav .menu span {
     height: 0.3rem;
     width: 2.3rem;
-    background-color: #fff;
+    background-color: #F3D8C7;
     border-radius: 0.2rem;
     transition: all ease-in-out 0.4s;
     position: relative;
@@ -102,7 +104,7 @@ nav .menu span {
 }
 
 .title img {
-    width: 5rem;
+
     height: 5rem;
 }
 
@@ -111,12 +113,16 @@ nav .menu span {
 
     nav .menu {
         display: flex;
+        top: 1.4rem;
 
     }
 
     nav {
         flex-direction: column;
         align-items: flex-start;
+        padding: 0;
+
+
     }
 
     nav ul {

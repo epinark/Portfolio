@@ -1,3 +1,8 @@
+#skills {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
 .skill-container {
     text-align: right;
     margin-bottom: 2.5rem;
@@ -40,19 +45,9 @@
     }
 }
 
-.tech-container {
-    /* background-color: #D0B8AC; */
-    padding: 2rem;
-    margin-bottom: 2rem;
-
-
-}
 
 .tech-container h2 {
     text-align: center;
-
-
-
 }
 
 .tech-icons-wrapper {
@@ -113,4 +108,14 @@
 
 .dot {
     font-size: 100px;
+}
+
+@media (min-width: 768px) {
+    #skills {
+        padding-bottom: 3rem;
+    }
+
+    .upper-skill h2 {
+        font-size: 4rem;
+    }
 }

@@ -4,7 +4,7 @@
     height: 45px;
     position: relative; */
     text-align: right;
-    margin-right: 2rem;
+    padding-right: 1rem;
     margin-bottom: 18%;
 
 }
@@ -82,7 +82,11 @@
         margin-bottom: 10%;
     }
 
-    .contact-wrapper h2 {}
+
+    .contact-wrapper h2 {
+        font-size: 4rem;
+
+    }
 
     .contact {
         font-size: 2rem;

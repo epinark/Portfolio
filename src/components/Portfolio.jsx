@@ -22,22 +22,16 @@ function Portfolio() {
             id="project-card-drtime"
             content={
               <div className="animation">
-                <span className="border-top"></span>
-                <span className="border-right"></span>
-                <span className="border-bottom"></span>
-                <span className="border-left"></span>
                 <div className="project-name">
                   <h2>DrTime</h2>
                   <div className="project-card">
                     <div className="project-card-inner">
                       <span className="description">
-                        An app focused on simplifying the process of scheduling
-                        doctor appointments and enabling find a primary doctor.
-                        In a small team, my primary roles included: Developing
-                        {/* specific frontend components. Managing backend
-                        development, which encompassed setting up the server,
-                        creating APIs, and ensuring communication with the
-                        database. */}
+                        An app focused on scheduling doctor's appointments.
+                        Built as a final project at WBS Coding School in a small
+                        team. My main tasks were to develop specific frontend
+                        components and the entire backend including database
+                        communication.
                         <ul className="skills">
                           <li className="skill">React</li>
                           <li className="skill">Node.js</li>
@@ -116,7 +110,9 @@ function Portfolio() {
                       rel="noopener noreferrer"
                     >
                       <img className="project-image" src={m} alt="drtime" />
-                      <span className="view-reverse">View Project⟶</span>
+                      <div className="view-wrapper">
+                        <span className="view-reverse">View Project⟶</span>
+                      </div>
                     </a>
                     <div className="connections">
                       <a
@@ -147,9 +143,9 @@ function Portfolio() {
                 <div className="project-card">
                   <div className="project-card-inner">
                     <span className="description">
-                      A trivia quiz application built using React. It fetches
+                      A trivia quiz application built with React. It fetches
                       trivia questions from an API and allows users to test
-                      their knowledge and see their scores.
+                      their knowledge and see their scores and correct answers.
                       <ul className="skills">
                         <li className="skill">React</li>
                         <li className="skill">Api</li>

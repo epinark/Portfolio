@@ -2,17 +2,23 @@ import mongo from "../images/mongo.svg";
 import postgresql from "../images/postgresql.svg";
 import tailwind from "../images/tailwind.svg";
 import sqlite from "../images/sqlite.svg";
+import Section from "./Section";
 
 function Skills() {
   return (
     <div className="tech-container" id="skills">
       <div className="skill-container">
-        <div className="upper-skill">
-          <h2>
-            My Skills<span className="dot">.</span>
-          </h2>
-          <span className="border-s"></span>
-        </div>
+        <Section
+          id="underline"
+          content={
+            <div className="upper-skill">
+              <h2>
+                My Skills<span className="dot">.</span>
+              </h2>
+              <span className="border-s"></span>
+            </div>
+          }
+        />
       </div>
       <div className="tech-icons-wrapper">
         <div className="tech-icon">

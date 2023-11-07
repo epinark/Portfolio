@@ -23,34 +23,44 @@ function App() {
         <Section id="skills" content={<Skills />} />
         <Section id="portfolio" content={<Portfolio />} />
         <Section id="contact" content={<Contact />} />
-
+        <div className="sticky-left">
+          <div className="social-media">
+            <a
+              className="social-icon"
+              href="www.linkedin.com/in/esra-pinar-berkus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              className="social-icon"
+              href="https://github.com/epinark"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <Link to="/contact" duration={1000} className="social-icon">
+              <i className="fa fa-envelope"></i>
+            </Link>
+          </div>{" "}
+        </div>
+        <div className="sticky-right">
+          <a
+            href="mailto:esrapinarkaya@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            esrapinarkaya@gmail.com
+          </a>
+        </div>
         <footer className="footer">
           <div className="container">
             <span>
               Built with <span className="heart">❤️</span> by Esra Pinar Berkus
               &copy; 2023
             </span>
-            {/* <div className="social-media">
-              <a
-                className="contacts"
-                href="www.linkedin.com/in/esra-pinar-berkus"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a
-                className="contacts"
-                href="https://github.com/epinark"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-github"></i>
-              </a>
-              <Link to="/contact" duration={1000} className="contacts">
-                <i className="fa fa-envelope"></i>
-              </Link>
-            </div> */}
           </div>
         </footer>
       </BrowserRouter>

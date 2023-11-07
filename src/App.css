@@ -21,6 +21,47 @@
   margin: 0 auto;
 }
 
+.sticky-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.sticky-right a {
+  text-decoration: none;
+}
+
+.sticky-right:hover {
+  transform: translateY(-3px);
+  opacity: 1;
+}
+
+.sticky-right::after {
+  content: "";
+  background-color: #F3D8C7;
+  width: 1px;
+  height: 120px;
+  display: inline-block;
+  margin: 0 auto;
+
+}
+
+.sticky-right a {
+  writing-mode: vertical-rl;
+  margin-bottom: 1rem;
+  color: #F3D8C7;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: 0.5s ease;
+
+}
+
 .footer {
   margin-top: 3rem;
   padding: 2rem 0;
@@ -74,9 +115,8 @@
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
-  /* Optional: Add a slight upward translation effect */
   transition: opacity 0.5s, transform 0.5s;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .fade-in-section.visible {
@@ -85,12 +125,15 @@
 
 }
 
-
-
-
 @media (min-width: 480px) {
   .container {
-    display: flex;
-    flex-direction: row;
+    font-size: 1.5rem;
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .sticky-right {
+    display: none;
   }
 }
