@@ -26,7 +26,7 @@
     width: 100%;
     position: absolute;
     height: 1px;
-    background: #D0B8AC;
+    background: var(--main-text-color);
     top: 57px;
     left: 0;
     max-width: 700px;
@@ -56,13 +56,9 @@
     padding-top: 1rem;
 }
 
+#project-card-trivia,
+#project-card-drtime,
 #project-card-myip {
-    border-style: double;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
-#project-card-drtime {
     border-style: double;
     padding: 1rem;
     border-radius: 1rem;
@@ -80,7 +76,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    color: #D0B8AC;
+    color: var(--main-text-color);
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); */
 
 
@@ -104,7 +100,7 @@
     top: 40%;
     left: -10%;
     background-color: rgba(169, 169, 169, 0.5);
-    color: #D0B8AC;
+    color: var(--main-text-color);
     padding: 0.5rem;
     display: flex;
     justify-content: center;
@@ -119,7 +115,7 @@
     top: 40%;
     left: -10%;
     background-color: rgba(169, 169, 169, 0.5);
-    color: #D0B8AC;
+    color: var(--main-text-color);
     padding: 0.5rem;
     display: flex;
     justify-content: center;
@@ -167,7 +163,7 @@
 }
 
 .description li {
-    /* background-color: #D0B8AC; */
+    /* background-color: var(--main-text-color); */
     border-radius: 5px;
     margin: 0.4rem;
     padding: 0.2rem 0.3rem;
@@ -185,7 +181,7 @@
 
 .connections i {
     font-size: 1.5rem;
-    color: #D0B8AC;
+    color: var(--main-text-color);
 }
 
 .connections i:hover {

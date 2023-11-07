@@ -2,14 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #393E46;
+  background-color: var(--background-color);
 
 }
 
-:root {}
+.dark-mode {
+  --background-color: #393E46;
+  --main-text-color: #D0B8AC;
+  --main-text-color-light: #F3D8C7;
+}
+
+.light-mode {
+  --background-color: #F3D8C7;
+  --main-text-color: #D0B8AC;
+  --main-text-color-light: #393E46;
+}
 
 .App {
-  color: #F3D8C7;
+  color: var(--main-text-color-light);
   width: 100%;
   font-family: 'Dancing Script', cursive;
   font-family: 'Delicious Handrawn', cursive;
@@ -44,7 +54,7 @@
 
 .sticky-right::after {
   content: "";
-  background-color: #F3D8C7;
+  background-color: var(--main-text-color-light);
   width: 1px;
   height: 120px;
   display: inline-block;
@@ -55,19 +65,17 @@
 .sticky-right a {
   writing-mode: vertical-rl;
   margin-bottom: 1rem;
-  color: #F3D8C7;
+  color: var(--main-text-color-light);
   font-size: 1.5rem;
   letter-spacing: 1px;
   transition: 0.5s ease;
-
 }
 
 .footer {
   margin-top: 3rem;
   padding: 2rem 0;
-  background-color: #393E46;
-  color: #D0B8AC;
-
+  background-color: var(--background-color);
+  color: var(--main-text-color);
 }
 
 .container {

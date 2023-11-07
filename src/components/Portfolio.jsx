@@ -1,17 +1,20 @@
+import { useTranslation } from "react-i18next";
+import Section from "./Section";
+
 import drtime from "../images/drtime.png";
 import myip from "../images/myip.png";
 import m from "../images/m.png";
 import quiz from "../images/quiz.png";
-import Section from "./Section";
 
 function Portfolio() {
+  const { t } = useTranslation();
   return (
     <div id="portfolio">
       <div className="projects-container">
         <div className="upper-wrap">
           <div className="inner-wrap">
             <h2>
-              My Projects<span className="dot">.</span>
+              Portfolio<span className="dot">.</span>
             </h2>
             <span className="border-p"></span>
           </div>
@@ -27,11 +30,7 @@ function Portfolio() {
                   <div className="project-card">
                     <div className="project-card-inner">
                       <span className="description">
-                        An app focused on scheduling doctor's appointments.
-                        Built as a final project at WBS Coding School in a small
-                        team. My main tasks were to develop specific frontend
-                        components and the entire backend including database
-                        communication.
+                        {t("drtime")}
                         <ul className="skills">
                           <li className="skill">React</li>
                           <li className="skill">Node.js</li>
@@ -92,9 +91,7 @@ function Portfolio() {
                 <div className="project-card-reverse">
                   <div className="project-card-inner">
                     <span className="description">
-                      A small one-page React application that provides the user
-                      with information about their current IP address, location,
-                      and some additional details about their country.
+                      {t("myip")}
                       <ul className="skills">
                         <li className="skill">React</li>
                         <li className="skill">Api</li>
@@ -136,16 +133,14 @@ function Portfolio() {
             }
           />
           <Section
-            id="project-card-myip"
+            id="project-card-trivia"
             content={
               <div className="project-name">
                 <h2>Trivia-Quiz</h2>
                 <div className="project-card">
                   <div className="project-card-inner">
                     <span className="description">
-                      A trivia quiz application built with React. It fetches
-                      trivia questions from an API and allows users to test
-                      their knowledge and see their scores and correct answers.
+                      {t("trivia")}
                       <ul className="skills">
                         <li className="skill">React</li>
                         <li className="skill">Api</li>

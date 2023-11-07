@@ -31,7 +31,7 @@
     width: 100%;
     position: absolute;
     height: 1px;
-    background: #D0B8AC;
+    background: var(--main-text-color);
     left: 0;
     bottom: -68px;
     max-width: 700px;

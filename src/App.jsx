@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -14,11 +15,31 @@ import "./styles/Home.css";
 import "./App.css";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
+import i18n from "./components/i18n";
+import { useTranslation } from "react-i18next";
+
+function setModeClass(isLightMode) {
+  document.body.classList.remove("light-mode", "dark-mode");
+  document.body.classList.add(isLightMode ? "dark-mode" : "light-mode");
+}
+
 function App() {
+  const { t } = useTranslation();
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  const toggleLightMode = () => {
+    setIsLightMode((prevMode) => !prevMode);
+    setModeClass(!isLightMode);
+  };
+
+  useEffect(() => {
+    setModeClass(isLightMode);
+  }, [isLightMode]);
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Navbar isLightMode={isLightMode} toggleLightMode={toggleLightMode} />
         <Section id="about" content={<About />} />
         <Section id="skills" content={<Skills />} />
         <Section id="portfolio" content={<Portfolio />} />
@@ -58,8 +79,8 @@ function App() {
         <footer className="footer">
           <div className="container">
             <span>
-              Built with <span className="heart">❤️</span> by Esra Pinar Berkus
-              &copy; 2023
+              {t("builtwith")} <span className="heart">❤️</span> {t("by")} Esra
+              Pinar Berkus &copy; 2023
             </span>
           </div>
         </footer>

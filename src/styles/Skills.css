@@ -27,7 +27,7 @@
     width: 100%;
     position: absolute;
     height: 1px;
-    background: #D0B8AC;
+    background: var(--main-text-color);
     left: 0;
     bottom: -62px;
     max-width: 700px;
@@ -66,7 +66,7 @@
 }
 
 .tech-icon span {
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -80,18 +80,18 @@
     flex-shrink: 0;
     border-radius: 1rem;
     /* background-color: #387ca386; */
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     border-style: double;
 
 }
 
 .icon-outer i {
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     font-size: 3.5rem;
 }
 
 .icon-outer span {
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     font-size: 3.5rem;
 }
 

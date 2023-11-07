@@ -1,16 +1,47 @@
 import { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logo from "../images/logo.png";
 
-function Navbar() {
+function LanguageSwitcher() {
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  // Get the current language from the i18next instance
+  const currentLanguage = i18n.language;
+
+  // Conditionally render the buttons based on the current language
+  return (
+    <div>
+      {currentLanguage === "en" ? (
+        <button onClick={() => changeLanguage("de")}>DE</button>
+      ) : (
+        <button onClick={() => changeLanguage("en")}>EN</button>
+      )}
+    </div>
+  );
+}
+
+const LightModeToggle = ({ isLightMode, toggleLightMode }) => {
+  return (
+    <button onClick={toggleLightMode}>
+      {isLightMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+    </button>
+  );
+};
+
+function Navbar({ isLightMode, toggleLightMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
   useEffect(() => {
-    // Function to update the active section based on scroll position
     const handleScroll = () => {
       const sections = ["about", "skills", "portfolio", "contact"];
       for (const sectionId of sections) {
@@ -60,7 +91,7 @@ function Navbar() {
                 href="#about"
                 className={activeSection === "about" ? "active" : ""}
               >
-                About
+                {t("about")}
               </a>
               <span className="underline"></span>
             </li>
@@ -69,7 +100,7 @@ function Navbar() {
                 href="#skills"
                 className={activeSection === "skills" ? "active" : ""}
               >
-                Skills{" "}
+                {t("skills")}
               </a>
               <span className="underline"></span>
             </li>
@@ -87,16 +118,22 @@ function Navbar() {
                 href="#contact"
                 className={activeSection === "contact" ? "active" : ""}
               >
-                Contact{" "}
+                {t("contact")}
               </a>
               <span className="underline"></span>
             </li>
             <li>
               <a href={cvUrl} download="esrapinarberkus-resume.pdf">
-                Resume
+                {t("resume")}
               </a>
               <span className="underline"></span>
             </li>
+
+            <LanguageSwitcher />
+            <LightModeToggle
+              isLightMode={isLightMode}
+              toggleLightMode={toggleLightMode}
+            />
           </ul>
         </nav>
       </header>

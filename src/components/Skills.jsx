@@ -3,8 +3,10 @@ import postgresql from "../images/postgresql.svg";
 import tailwind from "../images/tailwind.svg";
 import sqlite from "../images/sqlite.svg";
 import Section from "./Section";
+import { useTranslation } from "react-i18next";
 
 function Skills() {
+  const { t } = useTranslation();
   return (
     <div className="tech-container" id="skills">
       <div className="skill-container">
@@ -13,7 +15,8 @@ function Skills() {
           content={
             <div className="upper-skill">
               <h2>
-                My Skills<span className="dot">.</span>
+                {t("myskills")}
+                <span className="dot">.</span>
               </h2>
               <span className="border-s"></span>
             </div>

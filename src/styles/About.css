@@ -1,6 +1,10 @@
+:root {
+    --main-text-color: var(--main-text-color);
+    --main-text-color-light: var(--main-text-color-light);
+}
+
 #about {
     padding-top: 3.5rem;
-
 }
 
 .profile {
@@ -39,7 +43,7 @@
 
 .social-icon {
     padding-top: 15px;
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     font-size: 1.5rem;
     transition: .4s;
     display: inline-block;
@@ -48,7 +52,7 @@
 
 .social-media::after {
     content: "";
-    background-color: #F3D8C7;
+    background-color: var(--main-text-color-light);
     width: 1px;
     height: 120px;
     display: inline-block;
@@ -67,7 +71,7 @@
     font-size: 1.2rem;
     letter-spacing: .1rem;
     line-height: 2rem;
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     padding: 1rem 1.5rem;
 
 }
