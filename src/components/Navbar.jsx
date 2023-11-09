@@ -36,7 +36,7 @@ const LightModeToggle = ({ isLightMode, toggleLightMode }) => {
   );
 };
 
-function Navbar({ isLightMode, toggleLightMode }) {
+function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
   const { t } = useTranslation();
@@ -67,7 +67,6 @@ function Navbar({ isLightMode, toggleLightMode }) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const cvUrl = import.meta.env.VITE_CV_URL;
 
   return (
     <div>
@@ -127,7 +126,12 @@ function Navbar({ isLightMode, toggleLightMode }) {
               <span className="underline"></span>
             </li>
             <li>
-              <a href={cvUrl} download="esrapinarberkus-resume.pdf">
+              <a
+                href={cvUrl}
+                download="esrapinarberkus-resume.pdf"
+                target="_blank" // Optional: Open in a new tab/window
+                rel="noopener noreferrer"
+              >
                 {t("resume")}
               </a>
               <span className="underline"></span>

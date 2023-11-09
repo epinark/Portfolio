@@ -4,7 +4,6 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-import Home from "./components/Home";
 import Section from "./components/Section";
 import "./styles/Navbar.css";
 import "./styles/About.css";
@@ -36,10 +35,16 @@ function App() {
     setModeClass(isLightMode);
   }, [isLightMode]);
 
+  const cvUrl = import.meta.env.VITE_CV_URL;
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar isLightMode={isLightMode} toggleLightMode={toggleLightMode} />
+        <Navbar
+          cvUrl={cvUrl}
+          isLightMode={isLightMode}
+          toggleLightMode={toggleLightMode}
+        />
         <Section id="about" content={<About />} />
         <Section id="skills" content={<Skills isLightMode={isLightMode} />} />
         <Section id="portfolio" content={<Portfolio />} />
