@@ -13,8 +13,6 @@
     display: inline-block;
     height: 55px;
     position: relative;
-
-
 }
 
 .upper-skill h2 {
@@ -79,10 +77,8 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: 1rem;
-    /* background-color: #387ca386; */
     color: var(--main-text-color-light);
     border-style: double;
-
 }
 
 .icon-outer i {
@@ -98,12 +94,15 @@
 .icon-outer {
     opacity: 1;
     transition: .6s;
-
 }
 
 .icon-outer:hover {
     opacity: 0.6;
+}
 
+.icon-outer img {
+    width: 56px;
+    height: 56px;
 }
 
 .dot {
@@ -111,14 +110,7 @@
 }
 
 @media (min-width: 768px) {
-    #skills {
-        padding-bottom: 3rem;
-    }
-
     .upper-skill h2 {
         font-size: 4rem;
     }
-
-
-
 }

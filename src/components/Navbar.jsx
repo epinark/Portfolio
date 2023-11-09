@@ -51,7 +51,7 @@ function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
         const section = document.getElementById(sectionId);
         if (section) {
           const rect = section.getBoundingClientRect();
-          if (rect.top <= 0 && rect.bottom > 0) {
+          if (rect.top <= 100 && rect.bottom > 0) {
             setActiveSection(sectionId);
             break;
           }
@@ -68,11 +68,29 @@ function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
     };
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start", // Scroll to the start of the element
+        inline: "nearest", // Keep the element visible if it's partially visible
+      });
+
+      // // If you want additional spacing after scrolling, you can add it here
+      // window.scrollBy(0, -50); // This will scroll the page up by 50 pixels
+    }
+  };
+
   return (
     <div>
       <header>
         <nav>
-          <Link to="/" className="title">
+          <Link
+            to="/"
+            className="title"
+            onClick={() => scrollToSection("about")}
+          >
             {isLightMode ? (
               <img src={logo} alt="logo" />
             ) : (
@@ -89,7 +107,7 @@ function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
           </div>
 
           <ul onClick={toggleMenu} className={menuOpen ? "open" : ""}>
-            <li>
+            <li onClick={() => scrollToSection("about")}>
               <a
                 href="#about"
                 className={activeSection === "about" ? "active" : ""}
@@ -98,7 +116,7 @@ function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
               </a>
               <span className="underline"></span>
             </li>
-            <li>
+            <li onClick={() => scrollToSection("skills")}>
               <a
                 href="#skills"
                 className={activeSection === "skills" ? "active" : ""}
@@ -107,7 +125,7 @@ function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
               </a>
               <span className="underline"></span>
             </li>
-            <li>
+            <li onClick={() => scrollToSection("portfolio")}>
               <a
                 href="#portfolio"
                 className={activeSection === "portfolio" ? "active" : ""}
@@ -116,7 +134,7 @@ function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
               </a>
               <span className="underline"></span>
             </li>
-            <li>
+            <li onClick={() => scrollToSection("contact")}>
               <a
                 href="#contact"
                 className={activeSection === "contact" ? "active" : ""}
