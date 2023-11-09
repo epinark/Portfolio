@@ -1,3 +1,8 @@
+#skills {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
 .skill-container {
     text-align: right;
     margin-bottom: 2.5rem;
@@ -22,9 +27,9 @@
     width: 100%;
     position: absolute;
     height: 1px;
-    background: #D0B8AC;
+    background: var(--main-text-color);
     left: 0;
-    bottom: -62px;
+    bottom: -23px;
     max-width: 700px;
     opacity: .8;
     animation: drawTop 2s ease-in;
@@ -40,19 +45,9 @@
     }
 }
 
-.tech-container {
-    /* background-color: #D0B8AC; */
-    padding: 2rem;
-    margin-bottom: 2rem;
-
-
-}
 
 .tech-container h2 {
     text-align: center;
-
-
-
 }
 
 .tech-icons-wrapper {
@@ -71,7 +66,7 @@
 }
 
 .tech-icon span {
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -85,18 +80,18 @@
     flex-shrink: 0;
     border-radius: 1rem;
     /* background-color: #387ca386; */
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     border-style: double;
 
 }
 
 .icon-outer i {
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     font-size: 3.5rem;
 }
 
 .icon-outer span {
-    color: #F3D8C7;
+    color: var(--main-text-color-light);
     font-size: 3.5rem;
 }
 
@@ -112,5 +107,18 @@
 }
 
 .dot {
-    font-size: 100px;
+    font-size: 60px;
+}
+
+@media (min-width: 768px) {
+    #skills {
+        padding-bottom: 3rem;
+    }
+
+    .upper-skill h2 {
+        font-size: 4rem;
+    }
+
+
+
 }

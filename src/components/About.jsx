@@ -1,12 +1,13 @@
 import profile from "../images/esra.jpg";
-import anim from "../images/anim.gif";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import night from "../images/night.svg";
+import { useTranslation } from "react-i18next";
 
 function About() {
   const [currenttime, setCurrenttime] = useState(new Date());
   const greetings = currenttime.getHours();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,20 +23,28 @@ function About() {
   let emoji;
 
   if (greetings < 12) {
-    greetingText = "Good Morning☕";
+    greetingText = t("goodmorning");
+    emoji = "☕";
   } else if (greetings < 16) {
-    greetingText = "Good Afternoon☀️";
+    greetingText = t("goodafternoon");
+    emoji = "☀️";
   } else {
-    greetingText = "Good Evening ";
-    emoji = "🌟";
+    greetingText = t("goodevening");
+    emoji = "✨";
   }
   return (
     <div className="about" id="about">
       <div id="about-scroll">
         <div className="profile">
           <img src={profile} alt="profile-foto" />
-
-          <div className="social-media">
+        </div>
+        <div className="text">
+          <h1>
+            {greetingText} <span className="shooting-star">{emoji}</span>
+          </h1>
+          <span>{t("me")} </span>{" "}
+          <span className="handschrift">{t("title")}</span>
+          {/* <div className="social-media">
             <a
               className="social-icon"
               href="www.linkedin.com/in/esra-pinar-berkus"
@@ -55,34 +64,19 @@ function About() {
             <Link to="/contact" duration={1000} className="social-icon">
               <i className="fa fa-envelope"></i>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="text-container">
-        <div className="text">
-          <h1>
-            {greetingText} <span className="shooting-star">{emoji}</span>
-          </h1>
-          <span className="handschrift">Junior Fullstack Web Developer</span>
-        </div>
         <div className="text-details">
           <span className="border top-side"></span>
           <span className="border right-side"></span>
           <span className="border bottom-side"></span>
           <span className="border left-side"></span>
           <p className="paragraph">
-            <span>
-              I'm<span> Esra,</span>{" "}
-            </span>{" "}
-            <br />I was a math teacher who made a career change when I moved to
-            Germany two years ago, taking it as an opportunity to explore new
-            horizons while leveraging my background. My love for solving
-            challenging problems and exploring different ways of solving them
-            led me to embark on an ambitious journey as a full-stack web
-            developer. Through my education and professional teaching years, I
-            have developed a strong foundation in problem solving,{" "}
-            <span className="handschrift">analytical thinking,</span> and{" "}
-            <span className="handschrift">effective communication.</span>
+            {t("aboutme")}
+            {/* <span className="handschrift">analytical thinking,</span> and{" "}
+            <span className="handschrift">effective communication.</span> */}
           </p>
         </div>
       </div>

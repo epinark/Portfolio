@@ -1,18 +1,33 @@
+import Section from "./Section";
+import { useTranslation } from "react-i18next";
+
 import mongo from "../images/mongo.svg";
 import postgresql from "../images/postgresql.svg";
 import tailwind from "../images/tailwind.svg";
 import sqlite from "../images/sqlite.svg";
+import taildark from "../images/taildark.svg";
+import mongodark from "../images/mongodark.svg";
+import postgredark from "../images/postgredark.svg";
+import sqlitedark from "../images/sqlitedark.svg";
 
-function Skills() {
+function Skills({ isLightMode }) {
+  const { t } = useTranslation();
+
   return (
     <div className="tech-container" id="skills">
       <div className="skill-container">
-        <div className="upper-skill">
-          <h2>
-            My Skills<span className="dot">.</span>
-          </h2>
-          <span className="border-s"></span>
-        </div>
+        <Section
+          id="underline"
+          content={
+            <div className="upper-skill">
+              <h2>
+                {t("myskills")}
+                <span className="dot">.</span>
+              </h2>
+              <span className="border-s"></span>
+            </div>
+          }
+        />
       </div>
       <div className="tech-icons-wrapper">
         <div className="tech-icon">
@@ -54,27 +69,27 @@ function Skills() {
 
         <div className="tech-icon">
           <div className="icon-outer">
-            <img src={mongo} />
+            {isLightMode ? <img src={mongo} /> : <img src={mongodark} />}
           </div>
           <span>MongoDB</span>
         </div>
 
         <div className="tech-icon">
           <div className="icon-outer">
-            <img src={postgresql} />
+            {isLightMode ? <img src={postgresql} /> : <img src={postgredark} />}
           </div>
           <span>PostgreSQL</span>
         </div>
 
         <div className="tech-icon">
           <div className="icon-outer">
-            <img src={tailwind} />
+            {isLightMode ? <img src={tailwind} /> : <img src={taildark} />}
           </div>
           <span>Tailwind CSS</span>
         </div>
         <div className="tech-icon">
           <div className="icon-outer">
-            <img src={sqlite} />
+            {isLightMode ? <img src={sqlite} /> : <img src={sqlitedark} />}
           </div>
           <span>SQLite</span>
         </div>

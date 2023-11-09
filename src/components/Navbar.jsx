@@ -1,16 +1,50 @@
 import { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logo from "../images/logo.png";
+import logodark from "../images/logodark.png";
 
-function Navbar() {
+function LanguageSwitcher() {
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const currentLanguage = i18n.language;
+
+  return (
+    <>
+      {currentLanguage === "en" ? (
+        <button onClick={() => changeLanguage("de")}>DE</button>
+      ) : (
+        <button onClick={() => changeLanguage("en")}>EN</button>
+      )}
+    </>
+  );
+}
+
+const LightModeToggle = ({ isLightMode, toggleLightMode }) => {
+  return (
+    <button onClick={toggleLightMode}>
+      {isLightMode ? (
+        <i class="fa-solid fa-sun"></i>
+      ) : (
+        <i class="fa-solid fa-moon"></i>
+      )}
+    </button>
+  );
+};
+
+function Navbar({ isLightMode, toggleLightMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
   useEffect(() => {
-    // Function to update the active section based on scroll position
     const handleScroll = () => {
       const sections = ["about", "skills", "portfolio", "contact"];
       for (const sectionId of sections) {
@@ -25,13 +59,10 @@ function Navbar() {
       }
     };
 
-    // Attach scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Initial call to set the active section on page load
     handleScroll();
 
-    // Remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -40,60 +71,78 @@ function Navbar() {
 
   return (
     <div>
-      <nav>
-        <Link to="/" className="title">
-          <img src={logo} alt="logo" />
-        </Link>
-        <div className={`menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
-          <span className="line-1"></span>
-          <span className="line-2"></span>
-          <span className="line-3"></span>
-        </div>
-        <ul onClick={toggleMenu} className={menuOpen ? "open" : ""}>
-          <li>
-            <a
-              href="#about"
-              className={activeSection === "about" ? "active" : ""}
-            >
-              About
-            </a>
-            <span className="underline"></span>
-          </li>
-          <li>
-            <a
-              href="#skills"
-              className={activeSection === "skills" ? "active" : ""}
-            >
-              Skills{" "}
-            </a>
-            <span className="underline"></span>
-          </li>
-          <li>
-            <a
-              href="#portfolio"
-              className={activeSection === "portfolio" ? "active" : ""}
-            >
-              Portfolio{" "}
-            </a>
-            <span className="underline"></span>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className={activeSection === "contact" ? "active" : ""}
-            >
-              Contact{" "}
-            </a>
-            <span className="underline"></span>
-          </li>
-          <li>
-            <a href={cvUrl} download="esrapinarberkus-resume.pdf">
-              Resume
-            </a>
-            <span className="underline"></span>
-          </li>
-        </ul>
-      </nav>
+      <header>
+        <nav>
+          <Link to="/" className="title">
+            {isLightMode ? (
+              <img src={logo} alt="logo" />
+            ) : (
+              <img src={logodark} alt="logo" />
+            )}
+          </Link>
+          <div
+            className={`menu ${menuOpen ? "open" : ""}`}
+            onClick={toggleMenu}
+          >
+            <span className="line-1"></span>
+            <span className="line-2"></span>
+            <span className="line-3"></span>
+          </div>
+
+          <ul onClick={toggleMenu} className={menuOpen ? "open" : ""}>
+            <li>
+              <a
+                href="#about"
+                className={activeSection === "about" ? "active" : ""}
+              >
+                {t("about")}
+              </a>
+              <span className="underline"></span>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                className={activeSection === "skills" ? "active" : ""}
+              >
+                {t("skills")}
+              </a>
+              <span className="underline"></span>
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                className={activeSection === "portfolio" ? "active" : ""}
+              >
+                Portfolio{" "}
+              </a>
+              <span className="underline"></span>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className={activeSection === "contact" ? "active" : ""}
+              >
+                {t("contact")}
+              </a>
+              <span className="underline"></span>
+            </li>
+            <li>
+              <a href={cvUrl} download="esrapinarberkus-resume.pdf">
+                {t("resume")}
+              </a>
+              <span className="underline"></span>
+            </li>
+            <span className="switcher">
+              <LanguageSwitcher />
+
+              <LightModeToggle
+                isLightMode={isLightMode}
+                toggleLightMode={toggleLightMode}
+              />
+            </span>
+          </ul>
+        </nav>
+      </header>
     </div>
   );
 }

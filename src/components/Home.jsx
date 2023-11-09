@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import sun from "../images/sun.png";
 
 function Home() {
   const [currenttime, setCurrenttime] = useState(new Date());

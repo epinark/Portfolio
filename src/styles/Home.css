@@ -4,7 +4,7 @@
     font-size: 3rem;
     text-transform: uppercase;
     font-family: 'Delicious Handrawn', cursive;
-    color: #d0b8ac;
+    color: var(--main-text-color);
 }
 
 .animation {

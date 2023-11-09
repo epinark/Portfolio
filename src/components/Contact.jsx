@@ -1,9 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 function Contact() {
+  const { t } = useTranslation();
   return (
     <div className="contact-wrapper" id="contact">
       <div className="contact-section">
         <h2>
-          Contact<span className="dot">.</span>
+          {t("contact")}
+          <span className="dot">.</span>
         </h2>
         <span className="border-c"></span>
         <div className="contact-detail">
