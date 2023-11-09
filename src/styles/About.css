@@ -3,10 +3,6 @@
     --main-text-color-light: var(--main-text-color-light);
 }
 
-#about {
-    padding-top: 3.5rem;
-}
-
 .profile {
     display: flex;
     flex-direction: column;
@@ -148,7 +144,6 @@
 
 .left-side {
     height: 100%;
-
     bottom: 0;
     left: 0;
     width: 1px;
