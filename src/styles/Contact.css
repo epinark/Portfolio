@@ -1,8 +1,4 @@
 .contact-wrapper {
-    /* margin: 2rem 1rem;
-    display: inline-block;
-    height: 45px;
-    position: relative; */
     text-align: right;
     padding-right: 1rem;
     margin-bottom: 18%;
@@ -42,7 +38,7 @@
 .contact {
 
     text-decoration: none;
-    color: #387ca386;
+    color: var(--main-text-color);
     font-size: 1.5rem;
     transition: all 0.5s ease;
 
@@ -77,19 +73,17 @@
 
 }
 
-@media (min-width: 480px) {
-    .contact-wrapper {
-        margin-bottom: 10%;
-    }
 
+@media (min-width: 768px) {
 
     .contact-wrapper h2 {
         font-size: 4rem;
 
     }
 
-    .contact {
-        font-size: 2rem;
+    .contact-wrapper {
+        margin-bottom: 10%;
     }
+
 
 }

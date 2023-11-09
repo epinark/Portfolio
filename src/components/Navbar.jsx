@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import logo from "../images/logo.png";
+import logodark from "../images/logodark.png";
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
@@ -10,25 +11,27 @@ function LanguageSwitcher() {
     i18n.changeLanguage(lng);
   };
 
-  // Get the current language from the i18next instance
   const currentLanguage = i18n.language;
 
-  // Conditionally render the buttons based on the current language
   return (
-    <div>
+    <>
       {currentLanguage === "en" ? (
         <button onClick={() => changeLanguage("de")}>DE</button>
       ) : (
         <button onClick={() => changeLanguage("en")}>EN</button>
       )}
-    </div>
+    </>
   );
 }
 
 const LightModeToggle = ({ isLightMode, toggleLightMode }) => {
   return (
     <button onClick={toggleLightMode}>
-      {isLightMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      {isLightMode ? (
+        <i class="fa-solid fa-sun"></i>
+      ) : (
+        <i class="fa-solid fa-moon"></i>
+      )}
     </button>
   );
 };
@@ -56,13 +59,10 @@ function Navbar({ isLightMode, toggleLightMode }) {
       }
     };
 
-    // Attach scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Initial call to set the active section on page load
     handleScroll();
 
-    // Remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -74,7 +74,11 @@ function Navbar({ isLightMode, toggleLightMode }) {
       <header>
         <nav>
           <Link to="/" className="title">
-            <img src={logo} alt="logo" />
+            {isLightMode ? (
+              <img src={logo} alt="logo" />
+            ) : (
+              <img src={logodark} alt="logo" />
+            )}
           </Link>
           <div
             className={`menu ${menuOpen ? "open" : ""}`}
@@ -128,12 +132,14 @@ function Navbar({ isLightMode, toggleLightMode }) {
               </a>
               <span className="underline"></span>
             </li>
+            <span className="switcher">
+              <LanguageSwitcher />
 
-            <LanguageSwitcher />
-            <LightModeToggle
-              isLightMode={isLightMode}
-              toggleLightMode={toggleLightMode}
-            />
+              <LightModeToggle
+                isLightMode={isLightMode}
+                toggleLightMode={toggleLightMode}
+              />
+            </span>
           </ul>
         </nav>
       </header>

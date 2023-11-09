@@ -27,7 +27,7 @@ function About() {
     emoji = "☕";
   } else if (greetings < 16) {
     greetingText = t("goodafternoon");
-    emoji = "🔆";
+    emoji = "☀️";
   } else {
     greetingText = t("goodevening");
     emoji = "✨";

@@ -25,7 +25,7 @@ function setModeClass(isLightMode) {
 
 function App() {
   const { t } = useTranslation();
-  const [isLightMode, setIsLightMode] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(true);
 
   const toggleLightMode = () => {
     setIsLightMode((prevMode) => !prevMode);
@@ -41,7 +41,7 @@ function App() {
       <BrowserRouter>
         <Navbar isLightMode={isLightMode} toggleLightMode={toggleLightMode} />
         <Section id="about" content={<About />} />
-        <Section id="skills" content={<Skills />} />
+        <Section id="skills" content={<Skills isLightMode={isLightMode} />} />
         <Section id="portfolio" content={<Portfolio />} />
         <Section id="contact" content={<Contact />} />
         <div className="sticky-left">
@@ -62,10 +62,15 @@ function App() {
             >
               <i className="fab fa-github"></i>
             </a>
-            <Link to="/contact" duration={1000} className="social-icon">
+            <a
+              href="mailto:esrapinarkaya@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
               <i className="fa fa-envelope"></i>
-            </Link>
-          </div>{" "}
+            </a>
+          </div>
         </div>
         <div className="sticky-right">
           <a

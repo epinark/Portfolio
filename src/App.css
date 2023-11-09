@@ -10,11 +10,17 @@
   --background-color: #393E46;
   --main-text-color: #D0B8AC;
   --main-text-color-light: #F3D8C7;
+  --navbar-color: #393E46;
 }
 
 .light-mode {
-  --background-color: #F3D8C7;
-  --main-text-color: #D0B8AC;
+  /* background: radial-gradient(circle, rgba(170, 99, 140, 1) 2%, rgba(254, 248, 248, 1) 19%) no-repeat fixed center; */
+
+  background: rgb(209, 167, 164);
+  background: linear-gradient(301deg, rgba(209, 167, 164, 0.6082808123249299) 0%, rgba(57, 203, 212, 0) 51%, rgba(167, 132, 136, 1) 100%);
+  --navbar-color: rgba(167, 132, 136, 1);
+  /* --background-color: #F3D8C7; */
+  --main-text-color: #393E46;
   --main-text-color-light: #393E46;
 }
 
@@ -26,8 +32,12 @@
   font-family: 'Open Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  max-width: 1080px;
   font-weight: 300;
+}
+
+section {
+  max-width: 1080px;
+  width: 100%;
   margin: 0 auto;
 }
 
