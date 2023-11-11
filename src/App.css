@@ -42,7 +42,7 @@ section {
 }
 
 .sticky-right {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -138,7 +138,7 @@ section#contact {
 }
 
 section#about {
-  padding-top: 8rem;
+  padding-top: 7rem;
 }
 
 /*Transition*/
@@ -166,6 +166,10 @@ section#about {
   section#contact {
     padding-top: 5rem;
   }
+
+  section#about {
+    padding-top: 8rem;
+  }
 }
 
 @media (min-width: 1023px) {
@@ -174,10 +178,18 @@ section#about {
   section#contact {
     padding-top: 8rem;
   }
+
+  section#about {
+    padding-top: 9rem;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .sticky-right {
-    display: none;
+    display: flex;
+  }
+
+  section#about {
+    padding-top: 5rem;
   }
 }
