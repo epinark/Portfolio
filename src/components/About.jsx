@@ -1,7 +1,6 @@
 import profile from "../images/esra.jpg";
-import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import night from "../images/night.svg";
+import Gif from "./Gif";
 import { useTranslation } from "react-i18next";
 
 function About() {
@@ -36,7 +35,8 @@ function About() {
     <div className="about" id="about">
       <div id="about-scroll">
         <div className="profile">
-          <img src={profile} alt="profile-foto" />
+          {/* <img src={profile} alt="profile-foto" /> */}
+          <Gif />
         </div>
         <div className="text">
           <h1>
@@ -44,27 +44,6 @@ function About() {
           </h1>
           <span>{t("me")} </span>{" "}
           <span className="handschrift">{t("title")}</span>
-          {/* <div className="social-media">
-            <a
-              className="social-icon"
-              href="www.linkedin.com/in/esra-pinar-berkus"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              className="social-icon"
-              href="https://github.com/epinark"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-            <Link to="/contact" duration={1000} className="social-icon">
-              <i className="fa fa-envelope"></i>
-            </Link>
-          </div> */}
         </div>
       </div>
       <div className="text-container">
