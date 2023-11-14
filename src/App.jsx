@@ -89,7 +89,7 @@ function App() {
           <div className="container">
             <span>
               {t("builtwith")} <span className="heart">❤️</span> {t("by")} Esra
-              Pinar Berkus &copy; 2023
+              Pinar Berkus
             </span>
           </div>
         </footer>

@@ -27,9 +27,12 @@ function About() {
   } else if (greetings < 16) {
     greetingText = t("goodafternoon");
     emoji = "☀️";
-  } else {
+  } else if (greetings < 21 && greetings <= 24) {
     greetingText = t("goodevening");
     emoji = "✨";
+  } else {
+    greetingText = t("goodnight");
+    emoji = "🌙";
   }
   return (
     <div className="about" id="about">
@@ -48,11 +51,7 @@ function About() {
       </div>
       <div className="text-container">
         <div className="text-details">
-          <span className="decoration top-side"></span>
-          <span className="decoration right-side"></span>
-          <span className="decoration bottom-side"></span>
-          <span className="decoration left-side"></span>
-          <p className="paragraph">{t("aboutme")}</p>
+          <p>{t("aboutme")}</p>
         </div>
       </div>
     </div>
