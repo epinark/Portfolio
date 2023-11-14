@@ -66,21 +66,20 @@ nav ul li a {
     margin: 0 0.5rem;
 }
 
-
 .underline {
     background-color: gold;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
     height: 1px;
-    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-    transform: translateX(100%);
+    width: 0;
+    transition: width 0.3s ease-in-out;
+    transform-origin: bottom right;
 }
 
 nav ul li:hover .underline {
     width: 100%;
-    transform: translateX(0);
+    transform-origin: bottom left;
 }
 
 
@@ -140,7 +139,7 @@ nav .menu span {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 870px) {
 
     nav .menu {
         display: flex;
@@ -172,7 +171,7 @@ nav .menu span {
 
 
     nav ul li {
-        width: 100%;
+        width: fit-content;
         text-align: center;
     }
 

@@ -29,14 +29,13 @@
     height: 1px;
     background: var(--main-text-color);
     left: 0;
-    bottom: -25px;
+    bottom: 0;
     max-width: 700px;
     opacity: .8;
     animation: drawTop 2s ease-in;
 }
 
 .contact {
-
     text-decoration: none;
     color: var(--main-text-color);
     font-size: 1.5rem;
@@ -64,13 +63,10 @@
 .contact:hover {
     margin-left: 5px;
 
-
     .arrow {
         opacity: 1;
 
-
     }
-
 }
 
 
@@ -79,6 +75,10 @@
     .contact-wrapper h2 {
         font-size: 4rem;
 
+    }
+
+    .contact-section {
+        height: 78px;
     }
 
     .contact-wrapper {

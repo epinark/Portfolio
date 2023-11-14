@@ -20,10 +20,7 @@ function Skills({ isLightMode }) {
           id="underline"
           content={
             <div className="upper-skill">
-              <h2>
-                {t("myskills")}
-                <span className="dot">.</span>
-              </h2>
+              <h2>{t("myskills")}</h2>
               <span className="border-s"></span>
             </div>
           }

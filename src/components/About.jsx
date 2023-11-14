@@ -48,15 +48,11 @@ function About() {
       </div>
       <div className="text-container">
         <div className="text-details">
-          <span className="border top-side"></span>
-          <span className="border right-side"></span>
-          <span className="border bottom-side"></span>
-          <span className="border left-side"></span>
-          <p className="paragraph">
-            {t("aboutme")}
-            {/* <span className="handschrift">analytical thinking,</span> and{" "}
-            <span className="handschrift">effective communication.</span> */}
-          </p>
+          <span className="decoration top-side"></span>
+          <span className="decoration right-side"></span>
+          <span className="decoration bottom-side"></span>
+          <span className="decoration left-side"></span>
+          <p className="paragraph">{t("aboutme")}</p>
         </div>
       </div>
     </div>

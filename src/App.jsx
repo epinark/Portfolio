@@ -10,7 +10,6 @@ import "./styles/About.css";
 import "./styles/Skills.css";
 import "./styles/Portfolio.css";
 import "./styles/Contact.css";
-import "./styles/Home.css";
 import "./App.css";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
