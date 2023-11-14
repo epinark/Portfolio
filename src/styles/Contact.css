@@ -1,7 +1,7 @@
 .contact-wrapper {
     text-align: right;
-    padding-right: 1rem;
-    margin-bottom: 18%;
+    padding: 1rem;
+    margin-bottom: 25%;
 
 }
 
@@ -30,7 +30,7 @@
     background: var(--main-text-color);
     left: 0;
     bottom: 0;
-    max-width: 700px;
+    max-width: 400px;
     opacity: .8;
     animation: drawTop 2s ease-in;
 }
