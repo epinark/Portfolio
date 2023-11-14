@@ -13,9 +13,7 @@ function Portfolio() {
       <div className="projects-container">
         <div className="upper-wrap">
           <div className="inner-wrap">
-            <h2>
-              Portfolio<span className="dot">.</span>
-            </h2>
+            <h2>Portfolio</h2>
             <span className="border-p"></span>
           </div>
         </div>

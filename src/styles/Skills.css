@@ -11,7 +11,7 @@
 
 .upper-skill {
     display: inline-block;
-    height: 55px;
+    height: 52px;
     position: relative;
 }
 
@@ -27,7 +27,7 @@
     height: 1px;
     background: var(--main-text-color);
     left: 0;
-    bottom: -23px;
+    bottom: 0px;
     max-width: 700px;
     opacity: .8;
     animation: drawTop 2s ease-in;
@@ -105,12 +105,12 @@
     height: 56px;
 }
 
-.dot {
-    font-size: 60px;
-}
-
 @media (min-width: 768px) {
     .upper-skill h2 {
         font-size: 4rem;
+    }
+
+    .upper-skill {
+        height: 81px;
     }
 }

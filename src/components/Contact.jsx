@@ -5,10 +5,7 @@ function Contact() {
   return (
     <div className="contact-wrapper" id="contact">
       <div className="contact-section">
-        <h2>
-          {t("contact")}
-          <span className="dot">.</span>
-        </h2>
+        <h2>{t("contact")}</h2>
         <span className="border-c"></span>
         <div className="contact-detail">
           <a

@@ -84,7 +84,6 @@
 }
 
 .project-image {
-
     transition: .6s ease-out;
     backface-visibility: hidden;
     object-fit: cover;
@@ -100,7 +99,7 @@
     position: absolute;
     display: none;
     top: 40%;
-    left: -10%;
+    left: -6%;
     background-color: rgba(169, 169, 169, 0.5);
     color: var(--main-text-color);
     padding: 0.5rem;
@@ -228,6 +227,10 @@
 
     .view-reverse {
         display: none;
+    }
+
+    .border-p {
+        top: 36px;
     }
 }
 
