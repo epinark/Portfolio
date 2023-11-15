@@ -17,4 +17,5 @@ export default {
   drtime: "An app focused on scheduling doctor's appointments. Built as a final project at WBS Coding School in a small team. My main tasks were to develop specific frontend components and the entire backend including database communication.",
   myip: "A small one-page React application that provides the user with information about their current IP address, location, and some additional details about their country.",
   trivia: "A trivia quiz application built with React. It fetches trivia questions from an API and allows users to test their knowledge and see their scores and correct answers.",
+  viewproject: "View Project",
 };

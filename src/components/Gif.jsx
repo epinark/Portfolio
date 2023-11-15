@@ -13,7 +13,7 @@ const Gif = () => {
     const scrolled = window.scrollY;
     const windowHeight = window.innerHeight;
 
-    const percentage = 6;
+    const percentage = 5.4;
 
     if (!hasStartedScrolling && scrolled > (windowHeight * percentage) / 100) {
       setHasStartedScrolling(true);

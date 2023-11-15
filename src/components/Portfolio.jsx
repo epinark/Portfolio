@@ -49,7 +49,7 @@ function Portfolio() {
                           src={drtime}
                           alt="drtime"
                         />
-                        <span className="view">View Project⟶</span>
+                        <span className="view">{t("viewproject")}⟶</span>
                       </a>
                       <div className="connections">
                         <a
@@ -106,7 +106,9 @@ function Portfolio() {
                     >
                       <img className="project-image" src={m} alt="drtime" />
                       <div className="view-wrapper">
-                        <span className="view-reverse">View Project⟶</span>
+                        <span className="view-reverse">
+                          {t("viewproject")}⟶
+                        </span>
                       </div>
                     </a>
                     <div className="connections">
@@ -153,7 +155,7 @@ function Portfolio() {
                       rel="noopener noreferrer"
                     >
                       <img className="project-image" src={quiz} alt="quiz" />
-                      <span className="view">View Project⟶</span>
+                      <span className="view">{t("viewproject")}⟶</span>
                     </a>
                     <div className="connections">
                       <a
