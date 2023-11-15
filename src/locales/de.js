@@ -17,4 +17,5 @@ export default {
   drtime: "Abschlussprojekt an der WBS Coding School zur Vereinbarung von Arztterminen. Erstellt in einem kleinen Team, meine Verantwortung lag im Erstellen der Frontend Hooks zur Datenabfrage sowie im gesamten Backend, einschließlich der Datenbankanbindung.",
   myip: "Eine kleine einseitige React-App, die dem Benutzer Informationen über seine aktuelle IP-Adresse, seinen Standort und einige zusätzliche Details zu seinem Land anzeigt.",
   trivia: "Eine Quiz-App, die Quizfragen von einer API abruft und es Benutzern ermöglicht, ihr Wissen zu testen sowie ihre Ergebnisse und richtigen Antworten anzuzeigen.",
+  viewproject: "Projekt ansehen",
 };

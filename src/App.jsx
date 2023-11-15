@@ -52,7 +52,7 @@ function App() {
           <div className="social-media">
             <a
               className="social-icon"
-              href="www.linkedin.com/in/esra-pinar-berkus"
+              href="https://www.linkedin.com/in/esra-pinar-berkus"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -76,9 +76,6 @@ function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
         block: "start", // Scroll to the start of the element
         inline: "nearest", // Keep the element visible if it's partially visible
       });
-
-      // // If you want additional spacing after scrolling, you can add it here
-      // window.scrollBy(0, -50); // This will scroll the page up by 50 pixels
     }
   };
 
@@ -147,7 +144,7 @@ function Navbar({ isLightMode, toggleLightMode, cvUrl }) {
               <a
                 href={cvUrl}
                 download="esrapinarberkus-resume.pdf"
-                target="_blank" // Optional: Open in a new tab/window
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 {t("resume")}
