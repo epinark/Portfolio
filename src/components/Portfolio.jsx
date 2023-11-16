@@ -34,6 +34,7 @@ function Portfolio() {
                           <li className="skill">Node.js</li>
                           <li className="skill">MongoDB</li>
                           <li className="skill">Express</li>
+                          <li className="skill">Json Web Token</li>
                         </ul>
                       </span>
                     </div>
@@ -60,14 +61,14 @@ function Portfolio() {
                           <i className="fa-solid fa-up-right-from-square"></i>
                         </a>
                         <a
-                          href="https://github.com/Gabriel3004/DrTime-client"
+                          href="https://github.com/epinark/DrTime-client"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           <i className="fab fa-github"></i>
                         </a>
                         <a
-                          href="https://github.com/Gabriel3004/DrTime-server"
+                          href="https://github.com/epinark/DrTime-server"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
