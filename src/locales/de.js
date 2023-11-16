@@ -8,7 +8,7 @@ export default {
   goodmorning: "Guten Morgen",
   goodafternoon: "Schönen Nachmittag",
   goodevening: "Guten Abend",
-  goodnight: "gute Nacht",
+  goodnight: "Gute Nacht",
   contact: "Kontakt",
   title: "Full Stack Entwicklerin",
   myskills: "Fähigkeiten",

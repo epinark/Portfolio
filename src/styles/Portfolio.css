@@ -162,11 +162,13 @@
 .connections i {
     font-size: 1.5rem;
     color: var(--main-text-color);
+    transition: .4s;
 }
 
 .connections i:hover {
     cursor: pointer;
     color: goldenrod;
+    transform: translateY(-5px);
 }
 
 .inner-wrap {
@@ -178,9 +180,6 @@
     .project-name {
         padding: 0 3rem;
     }
-
-
-
 }
 
 @media (min-width: 1028px) {
@@ -194,7 +193,6 @@
         gap: 4rem;
         justify-content: center;
         align-items: center;
-
 
     }
 
@@ -214,10 +212,6 @@
         margin: 1rem auto;
 
     }
-
-
-
-
 }
 
 @media (max-width: 768px) {
