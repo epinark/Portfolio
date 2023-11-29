@@ -2,7 +2,7 @@
 export default {
   about: "Über mich",
   resume: "Lebenslauf",
-  aboutme: "Vielen Dank für Ihr Interesse an meinem Portfolio. Hier erfahren Sie mehr über mich. Mit einem soliden mathematischen Hintergrund habe ich eine analytische und strukturierte Denkweise entwickelt. Die Begeisterung für das Lösen komplexer Probleme, das Ausprobieren verschiedener Herangehensweisen und das Umsetzen abstrakter Ideen in greifbare, reale Produkte haben mich in die Welt des Full-Stack Web Development geführt. Seit meinem Abschluss an der WBS Coding School bin ich ein Junior Web Developer mit einer Leidenschaft für die Erstellung einzigartiger Benutzeroberflächen und die Entwicklung von Lösungen, die auf ein großartiges Benutzererlebnis abzielen.Mein Ziel ist es, meine Fähigkeiten in einem Team weiterzuentwickeln und mich neuen Herausforderungen zu stellen. Ich freue mich darauf, innovative Projekte zu realisieren und so zu einem inspirierenden Beitrag beizutragen.",
+  aboutme: "Vielen Dank für dein Interesse an meinem Portfolio. Mit meinem soliden mathematischen Hintergrund habe ich eine analytische und strukturierte Denkweise entwickelt. Die Begeisterung, komplexe Probleme zu lösen, verschiedene Ansätze auszuprobieren und abstrakte Ideen in greifbare Produkte umzusetzen, führte mich in die Welt der Full-Stack-Webentwicklung. Seit meinem Abschluss an der WBS Coding School bin ich als Junior Webentwickler tätig und habe eine Leidenschaft für die Gestaltung einzigartiger Benutzeroberflächen sowie die Entwicklung von Lösungen für eine großartige Benutzererfahrung.  Abseits des Codens findest du mich gerne beim Camping und Reisen.",
   me: "Ich bin Esra",
   skills: "Fähigkeiten",
   goodmorning: "Guten Morgen",
@@ -15,7 +15,9 @@ export default {
   builtwith: "Entwickelt mit",
   by: "von",
   drtime: "Abschlussprojekt an der WBS Coding School zur Vereinbarung von Arztterminen. Erstellt in einem kleinen Team, meine Verantwortung lag im Erstellen der Frontend Hooks zur Datenabfrage sowie im gesamten Backend, einschließlich der Datenbankanbindung.",
+  pokefight: "Eines der letzten Projekte an der WBS Coding School, bei dem meine Hauptaufgaben das responsiven Design, das Verwalten der Datenbank und die Datenanbindung umfassten. Die App erlaubt das Auswählen von Pokémon und Gegnern für Kämpfe.",
   myip: "Eine kleine einseitige React-App, die dem Benutzer Informationen über seine aktuelle IP-Adresse, seinen Standort und einige zusätzliche Details zu seinem Land anzeigt.",
   trivia: "Eine Quiz-App, die Quizfragen von einer API abruft und es Benutzern ermöglicht, ihr Wissen zu testen sowie ihre Ergebnisse und richtigen Antworten anzuzeigen.",
   viewproject: "Projekt ansehen",
+
 };
