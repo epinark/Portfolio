@@ -2,7 +2,7 @@
 export default {
   about: "About",
   resume: "Resume",
-  aboutme: "Thanks for checking out my portfolio. I have a strong math background, shaping my analytical thinking. My interest in problem-solving and turning abstract ideas into real products led me to full-stack Web Development. As a Junior Web Developer since graduating from WBS Coding School, I'm passionate about creating unique user interfaces and solutions for a great user experience.  Outside of coding, you'll find me enjoying hobbies like camping and traveling.",
+  aboutme: "Thanks for checking out my portfolio. I have a strong math background, shaping my analytical thinking. My interest in problem-solving and turning abstract ideas into real products led me to full-stack Web Development. As a Junior Web Developer since graduating from WBS Coding School, I'm passionate about creating unique user interfaces and solutions for a great user experience.  Outside of coding, you'll I enjoy camping and traveling.",
   me: "I'm Esra",
   skills: "Skills",
   goodmorning: "Good Morning",
