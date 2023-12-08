@@ -2,7 +2,7 @@
 export default {
   about: "Über mich",
   resume: "Lebenslauf",
-  aboutme: "Vielen Dank für dein Interesse an meinem Portfolio. Mit meinem soliden mathematischen Hintergrund habe ich eine analytische und strukturierte Denkweise entwickelt. Die Begeisterung, komplexe Probleme zu lösen, verschiedene Ansätze auszuprobieren und abstrakte Ideen in greifbare Produkte umzusetzen, führte mich in die Welt der Full-Stack-Webentwicklung. Seit meinem Abschluss an der WBS Coding School bin ich als Junior Webentwickler tätig und habe eine Leidenschaft für die Gestaltung einzigartiger Benutzeroberflächen sowie die Entwicklung von Lösungen für eine großartige Benutzererfahrung.  Abseits vom Programmieren genieße ich Camping und Reisen.",
+  aboutme: "Vielen Dank für dein Interesse an meinem Portfolio. Mit meinem soliden mathematischen Hintergrund habe ich eine analytische und strukturierte Denkweise entwickelt. Die Begeisterung, komplexe Probleme zu lösen, verschiedene Ansätze auszuprobieren und abstrakte Ideen in greifbare Produkte umzusetzen, führte mich in die Welt der Full-Stack-Webentwicklung. Seit meinem Abschluss an der WBS Coding School habe eine Leidenschaft für die Gestaltung einzigartiger Benutzeroberflächen sowie die Entwicklung von Lösungen für eine großartige Benutzererfahrung.  Abseits vom Programmieren genieße ich Camping und Reisen.",
   me: "Ich bin Esra",
   skills: "Fähigkeiten",
   goodmorning: "Guten Morgen",
