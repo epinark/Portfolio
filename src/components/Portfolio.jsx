@@ -45,7 +45,7 @@ function Portfolio() {
                         </ul>
                       </span>
                     </div>
-                    <div>
+                    <div className="project-card-image">
                       <a
                         className="image-container"
                         href="https://drtime.netlify.app/"
@@ -107,7 +107,7 @@ function Portfolio() {
                         </ul>
                       </span>
                     </div>
-                    <div>
+                    <div className="project-card-image">
                       <a
                         className="image-container"
                         href="https://pokefights.netlify.app/"
@@ -158,7 +158,7 @@ function Portfolio() {
                       </ul>
                     </span>
                   </div>
-                  <div>
+                  <div className="project-card-image">
                     <a
                       className="image-container"
                       href="https://justsomefun.netlify.app/"
@@ -207,7 +207,7 @@ function Portfolio() {
                       </ul>
                     </span>
                   </div>
-                  <div>
+                  <div className="project-card-image">
                     <a
                       className="image-container"
                       href="https://showmyplace.netlify.app/"
