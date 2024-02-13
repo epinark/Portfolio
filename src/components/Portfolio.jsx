@@ -6,15 +6,25 @@ import myip from "../images/myip.png";
 import m from "../images/m.png";
 import quiz from "../images/quiz.png";
 import pokefight from "../images/pokefight.png";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 function Portfolio() {
   const { t } = useTranslation();
+  const portfolioRef = useRef();
+  const isPortfolioRefInView = useInView(portfolioRef);
   return (
-    <div id="portfolio">
+    <div id="portfolio" ref={portfolioRef}>
       <div className="projects-container">
         <div className="upper-wrap">
           <div className="inner-wrap">
-            <h2>Portfolio</h2>
+            <motion.h2
+              initial={{ x: "-300px" }}
+              animate={isPortfolioRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.2 }}
+            >
+              Portfolio
+            </motion.h2>
             <span className="border-p"></span>
           </div>
         </div>
