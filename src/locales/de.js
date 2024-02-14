@@ -19,5 +19,10 @@ export default {
   myip: "Eine kleine einseitige React-App, die dem Benutzer Informationen über seine aktuelle IP-Adresse, seinen Standort und einige zusätzliche Details zu seinem Land anzeigt.",
   trivia: "Eine Quiz-App, die Quizfragen von einer API abruft und es Benutzern ermöglicht, ihr Wissen zu testen sowie ihre Ergebnisse und richtigen Antworten anzuzeigen.",
   viewproject: "Projekt ansehen",
+  text: "Sag Hallo!",
+  hi: "Liebe Esra,",
+  closing: "Viele Grüße",
+  email: "Meine E-Mail Adresse ist:",
+  send: "Senden"
 
 };

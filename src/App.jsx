@@ -86,7 +86,7 @@ function App() {
           </a>
         </div>
         <footer className="footer">
-          <div className="container">
+          <div className="footer-container">
             <span>
               {t("builtwith")} <span className="heart">❤️</span> {t("by")} Esra
               Pinar Berkus

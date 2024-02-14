@@ -86,6 +86,7 @@ section {
   padding: 2rem 0;
   background-color: var(--background-color);
   color: var(--main-text-color);
+  text-align: -webkit-center;
 }
 
 .container {

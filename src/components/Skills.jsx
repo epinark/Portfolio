@@ -9,24 +9,39 @@ import taildark from "../images/taildark.svg";
 import mongodark from "../images/mongodark.svg";
 import postgredark from "../images/postgredark.svg";
 import sqlitedark from "../images/sqlitedark.svg";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 function Skills({ isLightMode }) {
   const { t } = useTranslation();
+  const skillRef = useRef();
+  const isSkillRefInView = useInView(skillRef);
 
   return (
-    <div className="tech-container" id="skills">
+    <div className="tech-container" id="skills" ref={skillRef}>
       <div className="skill-container">
         <Section
           id="underline"
           content={
             <div className="upper-skill">
-              <h2>{t("myskills")}</h2>
-              <span className="border-s"></span>
+              <motion.h2
+                initial={{ x: "-300px" }}
+                animate={isSkillRefInView ? { x: 0 } : {}}
+                transition={{ delay: 0.2 }}
+              >
+                {t("myskills")}
+              </motion.h2>
+              {/* <span className="border-s"></span> */}
             </div>
           }
         />
       </div>
-      <div className="tech-icons-wrapper">
+      <motion.div
+        initial={{ x: "-300px" }}
+        animate={isSkillRefInView ? { x: 0 } : {}}
+        transition={{ delay: 0.2 }}
+        className="tech-icons-wrapper"
+      >
         <div className="tech-icon">
           <div className="icon-outer">
             <i className="fa-brands fa-html5"></i>
@@ -111,7 +126,7 @@ function Skills({ isLightMode }) {
           </div>
           <span>Figma</span>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
