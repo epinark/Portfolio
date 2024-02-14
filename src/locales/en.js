@@ -24,4 +24,9 @@ export default {
   myip: "A small one-page React application that provides the user with information about their current IP address, location, and some additional details about their country.",
   trivia: "A trivia quiz application built with React. It fetches trivia questions from an API and allows users to test their knowledge and see their scores and correct answers.",
   viewproject: "View Project",
+  text: "Say Hello",
+  hi: "Dear Esra,",
+  closing: "Regards",
+  email: "My mail address is:",
+  send: "Send"
 };

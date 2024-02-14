@@ -46,8 +46,9 @@ function Contact() {
           transition={{ delay: 0.2 }}
         >
           {t("contact")}
+          {/* <span className="border-c"></span> */}
         </motion.h2>
-        {/* <span className="border-c"></span> */}
+
         <div className="contact-container">
           <div className="animation-container">
             {" "}
@@ -70,12 +71,12 @@ function Contact() {
           <div className="form-container">
             {" "}
             <form onSubmit={sendEmail} ref={form} className="">
-              <span>Dear Esra,</span>
+              <span>{t("hi")}</span>
               <textarea rows={6} className="" name="user_message" />
-              <span>My mail address is:</span>
+              <span>{t("email")}</span>
               <input name="user_email" type="text" className="" />
-              <span>Regards</span>
-              <button className="send-button">Send</button>
+              <span>{t("closing")}</span>
+              <button className="send-button">{t("send")}</button>
               {success && (
                 <span className="">
                   Your message has been sent successfully!

@@ -13,6 +13,7 @@ function Portfolio() {
   const { t } = useTranslation();
   const portfolioRef = useRef();
   const isPortfolioRefInView = useInView(portfolioRef);
+
   return (
     <div id="portfolio" ref={portfolioRef}>
       <div className="projects-container">
@@ -25,134 +26,146 @@ function Portfolio() {
             >
               Portfolio
             </motion.h2>
-            <span className="border-p"></span>
+            {/* <span className="border-p"></span> */}
           </div>
         </div>
 
         <div className="project-card-outer">
-          <Section
-            id="project-card-drtime"
-            content={
-              <div className="animation">
-                <div className="project-name">
-                  <h2>DrTime</h2>
-                  <div className="project-card">
-                    <div className="project-card-inner">
-                      <span className="description">
-                        {t("drtime")}
-                        <span className="demo-account">
-                          <br />
-                          Demo Account: <br /> E-Mail: testaccount@test.com
-                          <br /> Password: 123456789
+          <motion.div
+            initial={{ x: "-300px" }}
+            animate={isPortfolioRefInView ? { x: 0 } : {}}
+            transition={{ delay: 0.2 }}
+          >
+            <Section
+              id="project-card-drtime"
+              content={
+                <div className="animation">
+                  <div className="project-name">
+                    <h2>DrTime</h2>
+                    <div className="project-card">
+                      <div className="project-card-inner">
+                        <span className="description">
+                          {t("drtime")}
+                          <span className="demo-account">
+                            <br />
+                            Demo Account: <br /> E-Mail: testaccount@test.com
+                            <br /> Password: 123456789
+                          </span>
+                          <ul className="skills">
+                            <li className="skill">React</li>
+                            <li className="skill">Node.js</li>
+                            <li className="skill">MongoDB</li>
+                            <li className="skill">Express</li>
+                            <li className="skill">Json Web Token</li>
+                            {/* <li className="skill">React Router Dom</li> */}
+                          </ul>
                         </span>
-                        <ul className="skills">
-                          <li className="skill">React</li>
-                          <li className="skill">Node.js</li>
-                          <li className="skill">MongoDB</li>
-                          <li className="skill">Express</li>
-                          <li className="skill">Json Web Token</li>
-                          {/* <li className="skill">React Router Dom</li> */}
-                        </ul>
-                      </span>
-                    </div>
-                    <div className="project-card-image">
-                      <a
-                        className="image-container"
-                        href="https://drtime.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          className="project-image"
-                          src={drtime}
-                          alt="drtime"
-                        />
-                        <span className="view">{t("viewproject")}⟶</span>
-                      </a>
-                      <div className="connections">
+                      </div>
+                      <div className="project-card-image">
                         <a
+                          className="image-container"
                           href="https://drtime.netlify.app/"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <i className="fa-solid fa-up-right-from-square"></i>
+                          <img
+                            className="project-image"
+                            src={drtime}
+                            alt="drtime"
+                          />
+                          <span className="view">{t("viewproject")}⟶</span>
                         </a>
-                        <a
-                          href="https://github.com/epinark/DrTime-client"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="fab fa-github"></i>
-                        </a>
-                        <a
-                          href="https://github.com/epinark/DrTime-server"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="fab fa-github"></i>
-                        </a>
+                        <div className="connections">
+                          <a
+                            href="https://drtime.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="fa-solid fa-up-right-from-square"></i>
+                          </a>
+                          <a
+                            href="https://github.com/epinark/DrTime-client"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                          <a
+                            href="https://github.com/epinark/DrTime-server"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            }
-          />
-          <Section
-            id="project-card-drtime"
-            content={
-              <div className="animation">
-                <div className="project-name">
-                  <h2>PokeFight</h2>
-                  <div className="project-card-reverse">
-                    <div className="project-card-inner">
-                      <span className="description">
-                        {t("pokefight")}
-                        <ul className="skills">
-                          <li className="skill">React</li>
-                          <li className="skill">Node.js</li>
-                          <li className="skill">MongoDB</li>
-                          <li className="skill">API</li>
-                          <li className="skill">Tailwind</li>
-                        </ul>
-                      </span>
-                    </div>
-                    <div className="project-card-image">
-                      <a
-                        className="image-container"
-                        href="https://pokefights.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          className="project-image"
-                          src={pokefight}
-                          alt="pokefight"
-                        />
-                        <span className="view">{t("viewproject")}⟶</span>
-                      </a>
-                      <div className="connections">
+              }
+            />
+          </motion.div>
+          <motion.div
+            initial={{ x: "-300px" }}
+            animate={isPortfolioRefInView ? { x: 0 } : {}}
+            transition={{ delay: 0.2 }}
+          >
+            <Section
+              id="project-card-drtime"
+              content={
+                <div className="animation">
+                  <div className="project-name">
+                    <h2>PokeFight</h2>
+                    <div className="project-card-reverse">
+                      <div className="project-card-inner">
+                        <span className="description">
+                          {t("pokefight")}
+                          <ul className="skills">
+                            <li className="skill">React</li>
+                            <li className="skill">Node.js</li>
+                            <li className="skill">MongoDB</li>
+                            <li className="skill">API</li>
+                            <li className="skill">Tailwind</li>
+                          </ul>
+                        </span>
+                      </div>
+                      <div className="project-card-image">
                         <a
+                          className="image-container"
                           href="https://pokefights.netlify.app/"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <i className="fa-solid fa-up-right-from-square"></i>
+                          <img
+                            className="project-image"
+                            src={pokefight}
+                            alt="pokefight"
+                          />
+                          <span className="view">{t("viewproject")}⟶</span>
                         </a>
-                        <a
-                          href="https://github.com/epinark/pokefight"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="fab fa-github"></i>
-                        </a>
+                        <div className="connections">
+                          <a
+                            href="https://pokefights.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="fa-solid fa-up-right-from-square"></i>
+                          </a>
+                          <a
+                            href="https://github.com/epinark/pokefight"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            }
-          />
+              }
+            />
+          </motion.div>
           <Section
             id="project-card-trivia"
             content={

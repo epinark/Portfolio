@@ -31,7 +31,7 @@ function Skills({ isLightMode }) {
               >
                 {t("myskills")}
               </motion.h2>
-              <span className="border-s"></span>
+              {/* <span className="border-s"></span> */}
             </div>
           }
         />
